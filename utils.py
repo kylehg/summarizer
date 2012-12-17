@@ -13,6 +13,9 @@ MAX_SENT_LEN = 35
 
 
 
+# Token and document utils
+# ------------------------
+
 def ls(path):
     return [os.path.join(path, item) for item in os.listdir(path)]
 
@@ -42,6 +45,13 @@ def get_sentences(path):
     return sents
 
 
+def get_toks(path):
+    return [tokenize.word_tokenize(sent) for sent in get_sentences(path)]
+
+
+# Summarizer utils
+# ----------------
+
 def is_valid_sent_len(sent, min_len=MIN_SENT_LEN, max_len=MAX_SENT_LEN):
     """Takes a list of tokens, returns if valid token length."""
     return min_len <= len(sent) <= max_len
@@ -53,6 +63,9 @@ def is_repeat(sent, sents):
     of the others."""
     raise NotImplementedError
 
+
+# Vectors and similarities
+# ------------------------
 
 def cosine_sim(x, y):
     """Return the cosine similarity between two vectors, defined as:

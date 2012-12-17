@@ -1,6 +1,7 @@
 """A Centrality Summarizer"""
 
-from utils import ls, get_sentences, is_valid_sent_len, is_repeat
+from utils import (ls, get_sentences, is_valid_sent_len, is_repeat,
+                   INPUT_ROOT)
 
 
 def centrality(vects):
@@ -38,5 +39,5 @@ def gen_summary(sents, max_words):
 
 
 if __name__ == '__main__':
-    collection_sents = get_sentences(ls(utils.INPUT_ROOT)[0])
-    print ls(utils.INPUT_ROOT)
+    collection_sents = get_sentences(ls(INPUT_ROOT)[0])
+    print collection_sents

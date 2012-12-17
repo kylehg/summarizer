@@ -1,7 +1,6 @@
 """A Centrality Summarizer"""
 
-MIN_SENT_LEN = 10
-MAX_SENT_LEN = 35
+from utils import ls, get_sentences, is_valid_sent_len, is_repeat
 
 
 def centrality(vects):
@@ -16,24 +15,6 @@ def centrality(vects):
                   if vect is not vect1])
              / n)
             for vect in vects]
-
-
-def sim(x, y):
-    """Calculate the similarity between a vector x and y. Returns a float."""
-    assert len(x) == len(y), 'Vectors are not the same.'
-    raise NotImplementedError
-
-
-def is_valid_sent_len(sent):
-    """Takes a list of tokens, returns if valid token length."""
-    return MIN_SENT_LEN <= len(sent) <= MAX_SENT_LEN
-
-
-def is_repeat(sent, sents):
-    """Given a tokenized sentence and a list of tokenized sentences,
-    return whether the sentences overlaps too highly in content with any
-    of the others."""
-    raise NotImplementedError
 
 
 def gen_summary(sents, max_words):
@@ -57,4 +38,5 @@ def gen_summary(sents, max_words):
 
 
 if __name__ == '__main__':
-    pass
+    collection_sents = get_sentences(ls(utils.INPUT_ROOT)[0])
+    print ls(utils.INPUT_ROOT)

@@ -1,13 +1,10 @@
 """ topic word summarizer written by hawka """
 
-from os import listdir
-from os.path import join
 from subprocess import call
-from nltk.tokenize import sent_tokenize, word_tokenize, line_tokenize
+from nltk.tokenize import word_tokenize, line_tokenize
 from nltk.probability import FreqDist
 
-def ls(path):
-    return [join(path, item) for item in listdir(path)]
+import utils
 
 def generate_topic_words(dir_path, topic_file):
     configcontents = ("==== Do not change these values ====" + "\n"
@@ -37,27 +34,6 @@ def load_topic_words(topic_file):
         topic_words_dict[pair[0]] = float(pair[1])
     return topic_words_dict
 
-def load_file_sents(path):
-    return [sent.lower() for sent in sent_tokenize(open(path).read())]
-
-def load_collection_sents(path):
-    sents = []
-    for file in ls(path):
-        sents.extend(load_file_sents(file))
-    return sents
-
-def get_sentences(path): 
-    """ loads sentences from the given path (collection or file) """
-    sents = []
-    try:
-        # treat as a single file
-        open(path).read()
-        sents = load_file_sents(path)
-    except IOError:
-        # it's a directory!
-        sents = load_collection_sents(path)
-    return sents
-
 def count_topicwords(sentence, tw_dict):
     tw_count = 0
     for word in word_tokenize(sentence):
@@ -73,7 +49,7 @@ def generate_sentence_dict(all_sents, tw_dict):
     return sent_dict
 
 def generate_summary(topic_file, to_summarize):
-    all_sents = get_sentences(to_summarize)
+    all_sents = utils.get_sentences(to_summarize)
     tw_dict = load_topic_words(topic_file)
     sent_dict = generate_sentence_dict(all_sents, tw_dict)
     # TODO add redundancy removal

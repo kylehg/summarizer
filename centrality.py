@@ -1,7 +1,4 @@
-"""
-A Centrality Summarizer
-Author: Kyle Hardgrave (kyleh@seas)
-"""
+"""A Centrality Summarizer"""
 
 MIN_SENT_LEN = 10
 MAX_SENT_LEN = 35

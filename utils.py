@@ -1,4 +1,4 @@
-"""Some utilities for working with text, etc."""
+"""Common utilities for working with text, etc."""
 
 import os
 from nltk import tokenize
@@ -10,6 +10,10 @@ INPUT_ROOT = PROJECT_ROOT + '/input'
 # The max and min word count to consider for a summary sentance.
 MIN_SENT_LEN = 10
 MAX_SENT_LEN = 35
+
+# The maximum similarity between two sentences that one should be
+# considered a duplicate of the other.
+MAX_SIM_CUTOFF = 0.2
 
 
 
@@ -57,11 +61,18 @@ def is_valid_sent_len(sent, min_len=MIN_SENT_LEN, max_len=MAX_SENT_LEN):
     return min_len <= len(sent) <= max_len
 
 
-def is_repeat(sent, sents):
+def is_repeat(sent, sents, vect_fun=binary_vectorize, max_sim=MAX_SIM_CUTOFF):
     """Given a tokenized sentence and a list of tokenized sentences,
     return whether the sentences overlaps too highly in content with any
     of the others."""
-    raise NotImplementedError
+    # TODO: Incorporate synonyms to better discern similarity
+    for other_sent in sents:
+        feat_space = feature_space(sent, other_sent)
+        x, y = vect_fun(feat_space, sent), vect_fun(feat_space, other_sent)
+        if cosine_sim(x, y) > max_sim:
+            return True
+    return False
+
 
 
 # Vectors and similarities
@@ -95,3 +106,8 @@ def freq_vectorize(feature_space, doc):
 
 def tfidf_vectorize(feature_space, doc):
     raise NotImplementedError
+
+
+def feature_space(doc1, doc2):
+    """Given two lists of tokens, return a common feature set."""
+    return sorted(set(doc1) | set(doc2))

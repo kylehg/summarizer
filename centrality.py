@@ -1,7 +1,6 @@
 """A Centrality Summarizer"""
 
-from utils import (ls, get_sentences, is_valid_sent_len, is_repeat,
-                   INPUT_ROOT)
+from utils import *
 
 
 def centrality(vects):
@@ -22,7 +21,7 @@ def gen_summary(sents, max_words):
     """Given a list of tokenized sentences and a threshold summary
     length (in words), return an ordered list of sentences comprising
     the summary."""
-    vects = [vectorize(sent) for sent in sents]
+    vects = map(binary_vectorize, sents)
     centralities = sorted(zip(centrality(vects), sents), reverse=True)
     summary = []
     word_count = 0
@@ -39,5 +38,5 @@ def gen_summary(sents, max_words):
 
 
 if __name__ == '__main__':
-    collection_sents = get_sentences(ls(INPUT_ROOT)[0])
+    collection_sents = get_toks(ls(INPUT_ROOT)[0])
     print collection_sents

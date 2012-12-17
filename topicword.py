@@ -6,8 +6,6 @@ from subprocess import call
 from nltk.tokenize import sent_tokenize, word_tokenize, line_tokenize
 from nltk.probability import FreqDist
 
-stoplist_path = "stoplist.txt"
-
 def ls(path):
     return [join(path, item) for item in listdir(path)]
 

@@ -1,5 +1,7 @@
 """A Centrality Summarizer"""
 
+from nltk import tokenize
+
 from utils import *
 
 
@@ -17,27 +19,34 @@ def centrality(vects):
             for vect in vects]
 
 
-def gen_summary(sents, max_words):
-    """Given a list of tokenized sentences and a threshold summary
+def gen_summary(orig_sents, max_words):
+    """Given a list of *untokenized* sentences and a threshold summary
     length (in words), return an ordered list of sentences comprising
     the summary."""
-    feat_space = sorted(set().union(*sents)) # TODO: Remove funcwords, etc?
-    vects = [binary_vectorize(feat_space, sent) for sent in  sents]
-    centralities = sorted(zip(centrality(vects), sents), reverse=True)
-    summary = []
+    tok_sents = [tokenize.word_tokenize(orig_sent)
+                 for orig_sent in orig_sents]
+    # TODO: Remove funcwords, etc?
+    feat_space = sorted(set().union(*tok_sents))
+    vects = [binary_vectorize(feat_space, tok_sent)
+             for tok_sent in tok_sents]
+    centralities = sorted(zip(centrality(vects), tok_sents, orig_sents),
+                          reverse=True)
+    summary, tok_summary = [], []
     word_count = 0
 
-    for score, sent in centralities:
+    for score, tok_sent, orig_sent in centralities:
         if word_count >= max_words:
             break
-        if is_valid_sent_len(sent) and not is_repeat(sent, summary):
-            summary.append(sent)
-            word_count += len(sent)
+        if (is_valid_sent_len(tok_sent) and
+            not is_repeat(tok_sent, tok_summary)):
+            summary.append(orig_sent)
+            tok_summary.append(tok_sent)
+            word_count += len(tok_sent)
 
 #    assert sum(map(len, summary)) <= max_words, 'Summary not within threshold'
     return summary
 
 
 if __name__ == '__main__':
-    sents = get_toks(ls(INPUT_ROOT)[0])
+    sents = get_sentences(ls(INPUT_ROOT)[0])
     print gen_summary(sents, 100)

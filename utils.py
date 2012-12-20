@@ -7,6 +7,8 @@ from nltk import tokenize
 
 PROJECT_ROOT = '/home1/c/cis530/final_project'
 INPUT_ROOT = PROJECT_ROOT + '/input'
+MODELS_ROOT = PROJECT_ROOT + '/models'
+BASELINE_ROOT = PROJECT_ROOT + '/baseline'
 
 # The max and min word count to consider for a summary sentance.
 MIN_SENT_LEN = 10
@@ -52,6 +54,16 @@ def get_sentences(path):
 
 def get_toks(path):
     return [tokenize.word_tokenize(sent) for sent in get_sentences(path)]
+
+
+
+def get_collections():
+    """Return a list of tuples of (documents, summaries, baselines)
+    for each collection."""
+    docs = sorted(ls(collection) for collection in ls(INPUT_ROOT))
+    models = sorted(ls(collection) for collection in ls(MODELS_ROOT))
+    baselines = sorted(ls(BASELINE_ROOT))
+    return zip(docs, models, baselines)
 
 
 # Vectors and similarities
@@ -120,3 +132,6 @@ def is_repeat(sent, sents, vect_fun=binary_vectorize, max_sim=MAX_SIM_CUTOFF):
             return True
     return False
 
+
+if __name__ == '__main__':
+    print get_collections()[0]

@@ -5,3 +5,5 @@ By Kyle Hardgrave and Amalia Hawkins ({kyleh,hawka}@seas.upenn.edu)
 
 Centrality Summarizer
 ---------------------
+
+Main function: `gen_centrality_summary(orig_sents, max_words)`

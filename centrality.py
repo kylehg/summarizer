@@ -19,7 +19,7 @@ def centrality(vects):
             for vect in vects]
 
 
-def gen_summary(orig_sents, max_words):
+def gen_centrality_summary(orig_sents, max_words):
     """Given a list of *untokenized* sentences and a threshold summary
     length (in words), return an ordered list of sentences comprising
     the summary."""
@@ -43,10 +43,10 @@ def gen_summary(orig_sents, max_words):
             tok_summary.append(tok_sent)
             word_count += len(tok_sent)
 
-#    assert sum(map(len, summary)) <= max_words, 'Summary not within threshold'
+    assert sum(map(len, summary)) <= max_words, 'Summary not within threshold'
     return summary
 
 
 if __name__ == '__main__':
     sents = get_sentences(ls(INPUT_ROOT)[0])
-    print gen_summary(sents, 100)
+    print gen_centrality_summary(sents, 100)

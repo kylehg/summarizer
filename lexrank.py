@@ -1,6 +1,6 @@
-""" lex rank summarizer written by hawka """
+"""LexPageRank, a graph-based document summarizer."""
 
-import utils
+from utils import *
 
 
-# TODO
+

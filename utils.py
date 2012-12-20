@@ -57,12 +57,19 @@ def get_toks(path):
 # Vectors and similarities
 # ------------------------
 
-def cosine_sim(x, y):
+def cosine_sim(x, y, vect_fun=None):
     """Return the cosine similarity between two vectors, defined as:
 
     (sum over X, Y of (x * w)) /
     sqrt(sum over X of x^2) * sqrt(sum over Y of y^2)
+
+    If a vectorize function is provided, assumes that x, y are a list 
+    of tokens and compares by vectorizing with the given vector function.
     """
+    if vect_fun:
+        feat_space = feature_space(x, y)
+        x, y = vect_fun(feat_space, x), vect_fun(feat_space, y)
+
     assert len(x) == len(y), 'Vectors are not the same length.'
     zipped = zip(x, y)
     top = float(sum(v * w for v, w in zipped))

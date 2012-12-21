@@ -3,6 +3,7 @@
 import os
 from nltk import tokenize
 from utils import *
+from rouge import gen_config
 
 
 def centrality(vects):
@@ -61,6 +62,7 @@ if __name__ == '__main__':
         summary = ' '.join(gen_centrality_summary(collection_sents, 100))
         with open('rouge/centrality/' + sum_name, 'w') as f:
             f.write(summary)
-        sums.append(sum_name, map(os.path.basename, models))
-    gen_configs('centrality', 'rouge/centrality-config.xml', 'centrality', 'models', sums)
+        sums.append((sum_name, map(os.path.basename, models)))
+    gen_config('centrality', 'rouge/centrality-config.xml', 'centrality',
+               'models', sums)
 

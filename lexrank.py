@@ -4,6 +4,7 @@ sentence summaries."""
 import itertools
 from centrality import gen_summary_from_rankings
 from utils import *
+from rouge import gen_config
 
 
 # The minimum similarity for sentences to be considered similar by LexPageRank.
@@ -76,5 +77,6 @@ if __name__ == '__main__':
         with open('rouge/lexrank/' + sum_name, 'w') as f:
             f.write(summary)
         sums.append(sum_name, map(os.path.basename, models))
-    gen_configs('lexrank', 'rouge/lexrank-config.xml', 'lexrank', 'models', sums)
+    gen_config('lexrank', 'rouge/lexrank-config.xml', 'lexrank',
+               'models', sums)
 

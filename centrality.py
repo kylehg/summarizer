@@ -1,7 +1,7 @@
 """A Centrality Summarizer"""
 
+import os
 from nltk import tokenize
-
 from utils import *
 
 
@@ -48,5 +48,14 @@ def gen_centrality_summary(orig_sents, max_words):
 
 
 if __name__ == '__main__':
-    sents = get_sentences(ls(INPUT_ROOT)[0])
-    print gen_centrality_summary(sents, 100)
+    # Gen summaries
+    collections = get_collections()
+    sums = []
+    for i, (docs, models, baseline) in enumerate(collections):
+        collection = os.path.dirname(docs[0])
+        sum_name = 'summary%02d.txt' % i
+        with open('rouge/centrality/' + sum_name, 'w') as f:
+            f.write(gen_centrality_summary(get_sentences(collection), 100))
+        sums.append(sum_name, map(os.path.basename, models))
+    gen_configs('centrality', 'rouge/centrality-config.xml', 'centrality', 'models', sums)
+

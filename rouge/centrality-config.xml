@@ -1,0 +1,14 @@
+<ROUGE-EVAL version="1.0">
+<EVAL ID="1">
+<PEER-ROOT>centrality</PEER-ROOT>
+<MODEL-ROOT>models</MODEL-ROOT>
+<INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
+<PEERS><P ID="centrality">summary00.txt</P></PEERS>
+<MODELS>
+<M ID="S0">D30001.M.100.T.A</M>
+<M ID="S1">D30001.M.100.T.B</M>
+<M ID="S2">D30001.M.100.T.C</M>
+<M ID="S3">D30001.M.100.T.D</M>
+</MODELS>
+</EVAL>
+</ROUGE-EVAL>

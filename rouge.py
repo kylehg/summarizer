@@ -7,7 +7,7 @@ import subprocess
 ROUGE_EXEC = './ROUGE-1.5.5.pl' #'/home1/c/cis530/final_project/rouge/ROUGE-1.5.5.pl'
 
 
-def gen_configs(sum_type, config_filename, peer_root, model_root, summaries):
+def gen_config(sum_type, config_filename, peer_root, model_root, summaries):
     """Given a summary type string, e.g., 'topicwords', and a list of
     (summary, [comparisons]) tuples, generate the appropriate config."""
     with open(config_filename, 'w') as f:

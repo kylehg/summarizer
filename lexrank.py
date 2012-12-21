@@ -31,7 +31,7 @@ def normalize_matrix(matrix):
     return matrix
 
 
-def pagerank(matrix):
+def pagerank(matrix, d=0.85):
     """Given a matrix of values, run the PageRank algorithm on them
     until the values converge. See Wikipedia page for source."""
     t = 0
@@ -49,8 +49,8 @@ def pagerank(matrix):
 
 def has_converged(x, y, epsilon=EPSILON):
     """Are all the elements in x are within epsilon of their y's?"""
-    for a, b in itertoos.izip(x, y):
-        if math.abs(a - b) > epsilon:
+    for a, b in itertools.izip(x, y):
+        if abs(a - b) > epsilon:
             return False
     return True
 
@@ -67,7 +67,7 @@ def gen_lexrank_summary(orig_sents, max_words):
 ###############################################################################
 if __name__ == '__main__':
     # Gen summaries
-    collections = get_collections()
+    collections = get_collections()[:1]
     sums = []
     for i, (docs, models, baseline) in enumerate(collections):
         collection = os.path.dirname(docs[0])
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         summary = ' '.join(gen_lexrank_summary(collection_sents, 100))
         with open('rouge/lexrank/' + sum_name, 'w') as f:
             f.write(summary)
-        sums.append(sum_name, map(os.path.basename, models))
+        sums.append((sum_name, map(os.path.basename, models)))
     gen_config('lexrank', 'rouge/lexrank-config.xml', 'lexrank',
                'models', sums)
 

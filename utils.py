@@ -111,7 +111,7 @@ def freq_vectorize(feature_space, doc):
             for point in feature_space]
 
 @memoized
-def load_idf_weights()
+def load_idf_weights():
     f = open(UNSTEMMED_IDF_FILE, 'r')
     f.readline() # Ignore first line
     return {line.spilt()[0]: line.split()[1] for line in f}
@@ -136,7 +136,7 @@ def is_valid_sent_len(sent, min_len=MIN_SENT_LEN, max_len=MAX_SENT_LEN):
     return min_len <= len(sent) <= max_len
 
 
-def is_repeat(sent, sents, vect_fun=binary_vectorize, max_sim=MAX_SIM_CUTOFF):
+def is_repeat(sent, sents, vect_fun=tfidf_vectorize, max_sim=MAX_SIM_CUTOFF):
     """Given a tokenized sentence and a list of tokenized sentences,
     return whether the sentences overlaps too highly in content with any
     of the others."""

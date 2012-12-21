@@ -2,13 +2,14 @@
 sentence summaries."""
 
 import itertools
-
+from centrality import gen_summary_from_rankings
 from utils import *
 
 
 # The minimum similarity for sentences to be considered similar by LexPageRank.
+# TODO: tune these
 MIN_LEXPAGERANK_SIM = 0.2
-EPSILON = 0.001
+EPSILON = 0.0001
 
 def sim_adj_matrix(sents, min_sim=MIN_LEXPAGERANK_SIM):
     """Compute the adjacency matrix of a list of tokenized sentences,
@@ -31,7 +32,7 @@ def normalize_matrix(matrix):
 
 def pagerank(matrix):
     """Given a matrix of values, run the PageRank algorithm on them
-    until the values converge."""
+    until the values converge. See Wikipedia page for source."""
     t = 0
     matrix1 = map(lambda row: map(lambda x: 0, row), matrix)
     n = len(matrix)
@@ -42,14 +43,24 @@ def pagerank(matrix):
         new_rank = [(((1.0-d) / n) +
                      d * sum((rank[i] * sim) for sim in row))
                     for row in matrix]
+    return rank
 
 
 def has_converged(x, y, epsilon=EPSILON):
-    """Are all the elements in x are within epsilon of y."""
+    """Are all the elements in x are within epsilon of their y's?"""
     for a, b in itertoos.izip(x, y):
         if math.abs(a - b) > epsilon:
             return False
     return True
+
+
+def gen_pagerank_summary(orig_sents, max_words):
+    tok_sents = [tokenize.word_tokenize(orig_sent)
+                 for orig_sent in orig_sents]
+    adj_matrix = normalize_matrix(sim_adj_matrix(tok_sents))
+    rank = pagerank(adj_matrix)
+    return gen_summary_from_rankings(rank, tok_sents, orig_sents, max_words)
+
 
 
 ###############################################################################

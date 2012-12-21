@@ -29,12 +29,16 @@ def gen_centrality_summary(orig_sents, max_words):
     feat_space = sorted(set().union(*tok_sents))
     vects = [binary_vectorize(feat_space, tok_sent)
              for tok_sent in tok_sents]
-    centralities = sorted(zip(centrality(vects), tok_sents, orig_sents),
-                          reverse=True)
+    return get_summary_from_rankings(centrality(vects), tok_sents,
+                                     orig_sents, max_words)
+
+
+def gen_summary_from_rankings(score, tok_sents, orig_sents, max_words):
+    ranked_sents = sorted(zip(rank, tok_sents, orig_sents), reverse=True)
     summary, tok_summary = [], []
     word_count = 0
 
-    for score, tok_sent, orig_sent in centralities:
+    for score, tok_sent, orig_sent in ranked_sents:
         if word_count >= max_words:
             break
         if (is_valid_sent_len(tok_sent) and
@@ -44,7 +48,7 @@ def gen_centrality_summary(orig_sents, max_words):
             word_count += len(tok_sent)
 
     assert sum(map(len, summary)) <= max_words, 'Summary not within threshold'
-    return summary
+    return summary    
 
 
 if __name__ == '__main__':

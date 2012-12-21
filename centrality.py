@@ -29,7 +29,7 @@ def gen_centrality_summary(orig_sents, max_words):
     feat_space = sorted(set().union(*tok_sents))
     vects = [binary_vectorize(feat_space, tok_sent)
              for tok_sent in tok_sents]
-    return get_summary_from_rankings(centrality(vects), tok_sents,
+    return gen_summary_from_rankings(centrality(vects), tok_sents,
                                      orig_sents, max_words)
 
 
@@ -53,7 +53,7 @@ def gen_summary_from_rankings(score, tok_sents, orig_sents, max_words):
 
 if __name__ == '__main__':
     # Gen summaries
-    collections = get_collections()
+    collections = get_collections()[:1]
     sums = []
     for i, (docs, models, baseline) in enumerate(collections):
         collection = os.path.dirname(docs[0])

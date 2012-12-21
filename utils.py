@@ -3,6 +3,7 @@
 import os
 import math
 from nltk import tokenize
+from memoizer import memoized
 
 
 PROJECT_ROOT = '/home1/c/cis530/final_project'
@@ -10,13 +11,16 @@ INPUT_ROOT = PROJECT_ROOT + '/input'
 MODELS_ROOT = PROJECT_ROOT + '/models'
 BASELINE_ROOT = PROJECT_ROOT + '/baseline'
 
+STEMMED_IDF_FILE = PROJECT_ROOT + '/global/bgIdfValues.unstemmed.txt'
+UNSTEMMED_IDF_FILE = PROJECT_ROOT + '/global/bgIdfValues.unstemmed.txt'
+
 # The max and min word count to consider for a summary sentance.
 MIN_SENT_LEN = 10
 MAX_SENT_LEN = 35
 
 # The maximum similarity between two sentences that one should be
 # considered a duplicate of the other.
-MAX_SIM_CUTOFF = 0.2
+MAX_SIM_CUTOFF = 0.3
 
 
 
@@ -100,11 +104,23 @@ def binary_vectorize(feature_space, doc):
 
 
 def freq_vectorize(feature_space, doc):
-    raise NotImplementedError
+    freqs = defaultdict(lambda: 0)
+    for word in doc:
+        freqs[word] += 1
+    return [freq[point] if point in freqs else 0
+            for point in feature_space]
+
+@memoized
+def load_idf_weights()
+    f = open(UNSTEMMED_IDF_FILE, 'r')
+    f.readline() # Ignore first line
+    return {line.spilt()[0]: line.split()[1] for line in f}
 
 
 def tfidf_vectorize(feature_space, doc):
-    raise NotImplementedError
+    idfs = load_idf_weights()
+    return [freq * idfs[point] if point in idfs else 0
+            for freq, point in zip(freq_vectorize, feature_space)]
 
 
 def feature_space(doc1, doc2):

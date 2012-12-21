@@ -52,10 +52,10 @@ def generate_summary(topic_file, to_summarize):
     all_sents = utils.get_sentences(to_summarize)
     tw_dict = load_topic_words(topic_file)
     sent_dict = generate_sentence_dict(all_sents, tw_dict)
-    # TODO add redundancy removal
     top_sents = sorted(sent_dict.items(), key=lambda t: t[1], reverse=True)
     pretty = []
     for sent in top_sents:
-        pretty.append(sent[0])
+        if not utils.is_repeat(sent[0], pretty):
+            pretty.append(sent[0])
     # return 100 words
     return " ".join(word_tokenize(" ".join(pretty))[:100])

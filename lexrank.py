@@ -54,7 +54,7 @@ def has_converged(x, y, epsilon=EPSILON):
     return True
 
 
-def gen_pagerank_summary(orig_sents, max_words):
+def gen_lexrank_summary(orig_sents, max_words):
     tok_sents = [tokenize.word_tokenize(orig_sent)
                  for orig_sent in orig_sents]
     adj_matrix = normalize_matrix(sim_adj_matrix(tok_sents))
@@ -65,4 +65,14 @@ def gen_pagerank_summary(orig_sents, max_words):
 
 ###############################################################################
 if __name__ == '__main__':
-    pass
+    # Gen summaries
+    collections = get_collections()
+    sums = []
+    for i, (docs, models, baseline) in enumerate(collections):
+        collection = os.path.dirname(docs[0])
+        sum_name = 'summary%02d.txt' % i
+        with open('rouge/lexrank/' + sum_name, 'w') as f:
+            f.write(gen_lexrank_summary(get_sentences(collection), 100))
+        sums.append(sum_name, map(os.path.basename, models))
+    gen_configs('lexrank', 'rouge/lexrank-config.xml', 'lexrank', 'models', sums)
+

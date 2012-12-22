@@ -12,12 +12,12 @@ INPUT_ROOT = PROJECT_ROOT + '/input'
 MODELS_ROOT = PROJECT_ROOT + '/models'
 BASELINE_ROOT = PROJECT_ROOT + '/baseline'
 
-STEMMED_IDF_FILE = PROJECT_ROOT + '/global/bgIdfValues.unstemmed.txt'
-UNSTEMMED_IDF_FILE = PROJECT_ROOT + '/global/bgIdfValues.unstemmed.txt'
+STEMMED_IDF_FILE = 'bgIdfValues.stemmed.txt'
+UNSTEMMED_IDF_FILE = 'bgIdfValues.unstemmed.txt'
 
 # The max and min word count to consider for a summary sentance.
 MIN_SENT_LEN = 10
-MAX_SENT_LEN = 35
+MAX_SENT_LEN = 55
 
 # The maximum similarity between two sentences that one should be
 # considered a duplicate of the other.
@@ -161,7 +161,7 @@ def gen_summaries(name, summary_fun, start=0, end=50):
         collection = os.path.dirname(docs[0])
         sum_name = 'summary%02d.txt' % i
         collection_sents = get_sentences(collection)
-        summary = ' '.join(summary_fun(collection_sents, 100))
+        summary = '\n'.join(summary_fun(collection_sents, 100))
         with open(os.path.join('rouge', name, sum_name), 'w') as f:
             f.write(summary)
         sums.append((sum_name, map(os.path.basename, models)))
@@ -169,9 +169,4 @@ def gen_summaries(name, summary_fun, start=0, end=50):
 
 
 if __name__ == '__main__':
-    s1, s2 = map(tokenize.word_tokenize, ['I am very cold today.',
-                                          'This coffee is very very cold.'])
-    feats = feature_space(s1, s2)
-    v1, v2 = tfidf_vectorize(feats, s1), tfidf_vectorize(feats, s2)
-    print v1
-    print v2
+    pass

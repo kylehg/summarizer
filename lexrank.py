@@ -67,16 +67,7 @@ def gen_lexrank_summary(orig_sents, max_words):
 ###############################################################################
 if __name__ == '__main__':
     # Gen summaries
-    collections = get_collections()[:1]
-    sums = []
-    for i, (docs, models, baseline) in enumerate(collections):
-        collection = os.path.dirname(docs[0])
-        sum_name = 'summary%02d.txt' % i
-        collection_sents = get_sentences(collection)
-        summary = ' '.join(gen_lexrank_summary(collection_sents, 100))
-        with open('rouge/lexrank/' + sum_name, 'w') as f:
-            f.write(summary)
-        sums.append((sum_name, map(os.path.basename, models)))
-    gen_config('lexrank', 'rouge/lexrank-config.xml', 'lexrank',
-               'models', sums)
+    #sums = gen_summaries('lexrank', gen_lexrank_summary, 0, 10)
+    sums = [(i, models) for i, _, models, _ in get_collections(False)][0:10]
+    gen_config('lexrank', 'rouge/lexrank-config.xml', 'lexrank', sums)
 

@@ -1,9 +1,9 @@
 <ROUGE-EVAL version="1.0">
 <EVAL ID="1">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary00.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary00.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30001.M.100.T.A</M>
 <M ID="S1">D30001.M.100.T.B</M>
@@ -12,10 +12,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="2">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary01.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary01.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30002.M.100.T.A</M>
 <M ID="S1">D30002.M.100.T.B</M>
@@ -24,10 +24,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="3">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary02.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary02.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30003.M.100.T.A</M>
 <M ID="S1">D30003.M.100.T.B</M>
@@ -36,10 +36,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="4">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary03.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary03.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30005.M.100.T.A</M>
 <M ID="S1">D30005.M.100.T.B</M>
@@ -48,10 +48,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="5">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary04.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary04.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30006.M.100.T.A</M>
 <M ID="S1">D30006.M.100.T.B</M>
@@ -60,10 +60,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="6">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary05.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary05.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30007.M.100.T.A</M>
 <M ID="S1">D30007.M.100.T.B</M>
@@ -72,10 +72,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="7">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary06.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary06.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30008.M.100.T.A</M>
 <M ID="S1">D30008.M.100.T.B</M>
@@ -84,10 +84,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="8">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary07.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary07.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30010.M.100.T.A</M>
 <M ID="S1">D30010.M.100.T.B</M>
@@ -96,10 +96,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="9">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary08.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary08.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30011.M.100.T.A</M>
 <M ID="S1">D30011.M.100.T.B</M>
@@ -108,10 +108,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="10">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary09.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary09.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30015.M.100.T.A</M>
 <M ID="S1">D30015.M.100.T.B</M>
@@ -120,10 +120,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="11">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary10.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary10.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30017.M.100.T.A</M>
 <M ID="S1">D30017.M.100.T.B</M>
@@ -132,10 +132,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="12">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary11.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary11.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30020.M.100.T.A</M>
 <M ID="S1">D30020.M.100.T.C</M>
@@ -144,10 +144,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="13">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary12.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary12.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30022.M.100.T.A</M>
 <M ID="S1">D30022.M.100.T.C</M>
@@ -156,10 +156,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="14">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary13.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary13.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30024.M.100.T.A</M>
 <M ID="S1">D30024.M.100.T.C</M>
@@ -168,10 +168,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="15">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary14.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary14.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30026.M.100.T.A</M>
 <M ID="S1">D30026.M.100.T.C</M>
@@ -180,10 +180,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="16">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary15.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary15.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30027.M.100.T.A</M>
 <M ID="S1">D30027.M.100.T.C</M>
@@ -192,10 +192,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="17">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary16.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary16.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30028.M.100.T.A</M>
 <M ID="S1">D30028.M.100.T.C</M>
@@ -204,10 +204,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="18">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary17.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary17.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30029.M.100.T.A</M>
 <M ID="S1">D30029.M.100.T.C</M>
@@ -216,10 +216,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="19">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary18.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary18.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30031.M.100.T.A</M>
 <M ID="S1">D30031.M.100.T.D</M>
@@ -228,10 +228,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="20">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary19.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary19.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30033.M.100.T.A</M>
 <M ID="S1">D30033.M.100.T.D</M>
@@ -240,10 +240,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="21">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary20.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary20.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30034.M.100.T.A</M>
 <M ID="S1">D30034.M.100.T.D</M>
@@ -252,10 +252,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="22">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary21.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary21.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30036.M.100.T.A</M>
 <M ID="S1">D30036.M.100.T.D</M>
@@ -264,10 +264,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="23">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary22.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary22.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30037.M.100.T.A</M>
 <M ID="S1">D30037.M.100.T.D</M>
@@ -276,10 +276,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="24">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary23.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary23.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30038.M.100.T.A</M>
 <M ID="S1">D30038.M.100.T.E</M>
@@ -288,10 +288,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="25">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary24.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary24.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30040.M.100.T.A</M>
 <M ID="S1">D30040.M.100.T.E</M>
@@ -300,10 +300,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="26">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary25.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary25.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30042.M.100.T.B</M>
 <M ID="S1">D30042.M.100.T.C</M>
@@ -312,10 +312,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="27">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary26.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary26.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30044.M.100.T.B</M>
 <M ID="S1">D30044.M.100.T.C</M>
@@ -324,10 +324,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="28">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary27.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary27.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30045.M.100.T.B</M>
 <M ID="S1">D30045.M.100.T.C</M>
@@ -336,10 +336,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="29">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary28.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary28.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30046.M.100.T.B</M>
 <M ID="S1">D30046.M.100.T.C</M>
@@ -348,10 +348,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="30">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary29.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary29.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30047.M.100.T.B</M>
 <M ID="S1">D30047.M.100.T.C</M>
@@ -360,10 +360,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="31">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary30.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary30.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30048.M.100.T.B</M>
 <M ID="S1">D30048.M.100.T.C</M>
@@ -372,10 +372,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="32">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary31.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary31.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30049.M.100.T.B</M>
 <M ID="S1">D30049.M.100.T.D</M>
@@ -384,10 +384,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="33">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary32.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary32.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30050.M.100.T.B</M>
 <M ID="S1">D30050.M.100.T.D</M>
@@ -396,10 +396,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="34">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary33.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary33.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30051.M.100.T.B</M>
 <M ID="S1">D30051.M.100.T.D</M>
@@ -408,10 +408,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="35">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary34.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary34.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30053.M.100.T.B</M>
 <M ID="S1">D30053.M.100.T.E</M>
@@ -420,10 +420,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="36">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary35.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary35.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30055.M.100.T.B</M>
 <M ID="S1">D30055.M.100.T.E</M>
@@ -432,10 +432,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="37">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary36.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary36.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30056.M.100.T.B</M>
 <M ID="S1">D30056.M.100.T.E</M>
@@ -444,10 +444,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="38">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary37.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary37.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D30059.M.100.T.B</M>
 <M ID="S1">D30059.M.100.T.F</M>
@@ -456,10 +456,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="39">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary38.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary38.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31001.M.100.T.C</M>
 <M ID="S1">D31001.M.100.T.D</M>
@@ -468,10 +468,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="40">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary39.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary39.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31008.M.100.T.C</M>
 <M ID="S1">D31008.M.100.T.D</M>
@@ -480,10 +480,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="41">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary40.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary40.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31009.M.100.T.B</M>
 <M ID="S1">D31009.M.100.T.C</M>
@@ -492,10 +492,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="42">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary41.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary41.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31013.M.100.T.C</M>
 <M ID="S1">D31013.M.100.T.D</M>
@@ -504,10 +504,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="43">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary42.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary42.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31022.M.100.T.C</M>
 <M ID="S1">D31022.M.100.T.E</M>
@@ -516,10 +516,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="44">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary43.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary43.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31026.M.100.T.C</M>
 <M ID="S1">D31026.M.100.T.E</M>
@@ -528,10 +528,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="45">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary44.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary44.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31031.M.100.T.C</M>
 <M ID="S1">D31031.M.100.T.F</M>
@@ -540,10 +540,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="46">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary45.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary45.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31032.M.100.T.D</M>
 <M ID="S1">D31032.M.100.T.E</M>
@@ -552,10 +552,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="47">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary46.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary46.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31033.M.100.T.D</M>
 <M ID="S1">D31033.M.100.T.E</M>
@@ -564,10 +564,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="48">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary47.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary47.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31038.M.100.T.D</M>
 <M ID="S1">D31038.M.100.T.E</M>
@@ -576,10 +576,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="49">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary48.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary48.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31043.M.100.T.D</M>
 <M ID="S1">D31043.M.100.T.F</M>
@@ -588,10 +588,10 @@
 </MODELS>
 </EVAL>
 <EVAL ID="50">
-<PEER-ROOT>centrality</PEER-ROOT>
+<PEER-ROOT>centrality-binary</PEER-ROOT>
 <MODEL-ROOT>models</MODEL-ROOT>
 <INPUT-FORMAT TYPE="SPL"></INPUT-FORMAT>
-<PEERS><P ID="centrality">summary49.txt</P></PEERS>
+<PEERS><P ID="centrality-binary">summary49.txt</P></PEERS>
 <MODELS>
 <M ID="S0">D31050.M.100.T.E</M>
 <M ID="S1">D31050.M.100.T.F</M>

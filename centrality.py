@@ -53,16 +53,7 @@ def gen_summary_from_rankings(score, tok_sents, orig_sents, max_words):
 
 if __name__ == '__main__':
     # Gen summaries
-    collections = get_collections()[:1]
-    sums = []
-    for i, (docs, models, baseline) in enumerate(collections):
-        collection = os.path.dirname(docs[0])
-        sum_name = 'summary%02d.txt' % i
-        collection_sents = get_sentences(collection)
-        summary = ' '.join(gen_centrality_summary(collection_sents, 100))
-        with open('rouge/centrality/' + sum_name, 'w') as f:
-            f.write(summary)
-        sums.append((sum_name, map(os.path.basename, models)))
-    gen_config('centrality', 'rouge/centrality-config.xml', 'centrality',
-               'models', sums)
-
+#    gen_summaries('centrality-binary', gen_centrality_summary, 44, 50)
+#    gen_config('centrality-binary', 'rouge/centrality-binary-config.xml',
+#               'centrality-binary')
+    gen_config('centrality', 'rouge/centrality-config.xml', 'centrality')

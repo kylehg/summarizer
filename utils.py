@@ -2,6 +2,7 @@
 
 import os
 import math
+from collections import defaultdict
 from nltk import tokenize
 from memoizer import memoized
 
@@ -61,13 +62,16 @@ def get_toks(path):
 
 
 
-def get_collections():
+def get_collections(fullpath=True):
     """Return a list of tuples of (documents, summaries, baselines)
     for each collection."""
-    docs = sorted(ls(collection) for collection in ls(INPUT_ROOT))
-    models = sorted(ls(collection) for collection in ls(MODELS_ROOT))
-    baselines = sorted(ls(BASELINE_ROOT))
-    return zip(docs, models, baselines)
+    docs = sorted(ls(collection) if fullpath else os.listdir(collection)
+                  for collection in ls(INPUT_ROOT))
+    models = sorted(ls(collection) if fullpath else os.listdir(collection)
+                    for collection in ls(MODELS_ROOT))
+    baselines = sorted(ls(BASELINE_ROOT) if fullpath else
+                       os.listdir(BASELINE_ROOT))
+    return zip(range(50), docs, models, baselines)
 
 
 # Vectors and similarities
@@ -107,20 +111,21 @@ def freq_vectorize(feature_space, doc):
     freqs = defaultdict(lambda: 0)
     for word in doc:
         freqs[word] += 1
-    return [freq[point] if point in freqs else 0
+    return [freqs[point] if point in freqs else 0
             for point in feature_space]
 
 @memoized
 def load_idf_weights():
     f = open(UNSTEMMED_IDF_FILE, 'r')
     f.readline() # Ignore first line
-    return {line.spilt()[0]: line.split()[1] for line in f}
+    return {line.split()[0]: float(line.split()[1]) for line in f}
 
 
 def tfidf_vectorize(feature_space, doc):
     idfs = load_idf_weights()
+    freq_vect = freq_vectorize(feature_space, doc)
     return [freq * idfs[point] if point in idfs else 0
-            for freq, point in zip(freq_vectorize, feature_space)]
+            for freq, point in zip(freq_vect, feature_space)]
 
 
 def feature_space(doc1, doc2):
@@ -149,5 +154,24 @@ def is_repeat(sent, sents, vect_fun=tfidf_vectorize, max_sim=MAX_SIM_CUTOFF):
     return False
 
 
+def gen_summaries(name, summary_fun, start=0, end=50):
+    collections = get_collections()[start:end]
+    sums = []
+    for i, docs, models, baseline in collections:
+        collection = os.path.dirname(docs[0])
+        sum_name = 'summary%02d.txt' % i
+        collection_sents = get_sentences(collection)
+        summary = ' '.join(summary_fun(collection_sents, 100))
+        with open(os.path.join('rouge', name, sum_name), 'w') as f:
+            f.write(summary)
+        sums.append((sum_name, map(os.path.basename, models)))
+    return sums
+
+
 if __name__ == '__main__':
-    print get_collections()[0]
+    s1, s2 = map(tokenize.word_tokenize, ['I am very cold today.',
+                                          'This coffee is very very cold.'])
+    feats = feature_space(s1, s2)
+    v1, v2 = tfidf_vectorize(feats, s1), tfidf_vectorize(feats, s2)
+    print v1
+    print v2

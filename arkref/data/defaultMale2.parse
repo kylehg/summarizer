@@ -1,0 +1,2 @@
+PARSE	-57.34165573120117	(ROOT (S (NP (NNP Bob)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN banker)))) (. .)))
+PARSE	-53.67909622192383	(ROOT (S (NP (PRP He)) (VP (VBD wanted) (S (VP (TO to) (VP (VB do) (NP (DT a) (NN transaction)))))) (. .)))

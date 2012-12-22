@@ -1,0 +1,16 @@
+ok ...
+two different "approach"es.
+subject driving the sentence should win the reference challenge.
+
+[First] developed in [the early 20th century] , [structural grammar]3 was [a response to [the prescriptive grammar approach of [the time]]5]3 .
+[Structural grammar]3 describes how [language]8 actually is used , rather than prescribing how [grammar]3 should be used .
+[This approach]5 allows [an emphasis to be placed on [the systematic and formulaic nature of [language]8]] .
+[A key change] involved [the shift] to [general role-based description of [the usage of [a word]]] , whereas [the focus before had been on declaring [words] to fall into [strict categories] -LRB- such as [the eight parts of [speech found in [Latin]]] -RRB-] .
+
+
+... also ...
+"prescribing how [grammar]3... " error to [structural grammar]3.
+
+needs to be "THE [grammar]" to be able to resolve to [structural grammar].
+
+is there a general principle for definite determiners?

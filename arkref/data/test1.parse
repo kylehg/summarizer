@@ -1,0 +1,4 @@
+PARSE	-52.29981994628906	(ROOT (S (NP (NNP John)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN store)))) (. .)))
+PARSE	-65.29651641845703	(ROOT (S (NP (NNP Bob)) (ADVP (RB also)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN store)))) (. .)))
+PARSE	-56.90623474121094	(ROOT (S (NP (PRP It)) (VP (VBD was) (NP (DT a) (NN grocery) (NN store))) (. .)))
+PARSE	-50.90569305419922	(ROOT (S (NP (PRP He)) (VP (VBD bought) (NP (DT an) (NN item))) (. .)))

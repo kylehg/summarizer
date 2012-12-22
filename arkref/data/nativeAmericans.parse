@@ -1,0 +1,2 @@
+PARSE	-220.36785888671875	(ROOT (S (NP (DT The) (JJS earliest) (JJ known) (NNS settlers)) (VP (VBD followed) (NP (NP (NNS herds)) (PP (IN of) (NP (JJ large) (NN game)))) (PP (TO to) (NP (DT the) (NN region))) (PP (IN during) (NP (DT the) (JJ last) (JJ glacial) (NN period)))) (. .)))
+PARSE	-175.56723022460938	(ROOT (S (NP (PRP They)) (VP (VBN preceded) (NP (NP (DT the) (NNP Anishinaabe)) (, ,) (NP (DT the) (NNP Dakota)) (, ,) (CC and) (NP (JJ other) (JJ Native) (JJ American) (NNS inhabitants)))) (. .)))

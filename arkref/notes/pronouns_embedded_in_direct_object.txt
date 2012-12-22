@@ -1,0 +1,11 @@
+accept [it]6  ... should be [it]1
+
+[The three-page Copenhagen Accord]1 is not legally binding , and [the 192 nations that took [part in [the December talks]]] did not formally accept [it]1 .
+But [a sizable group of [those countries]7]6 said [they]7 would accept [it]6 and provide [plans to reduce [greenhouse gas emissions] by [Jan. 31]] .
+
+
+Also wrong when embedded as modifier: [[its]6 terms]
+
+[The three-page Copenhagen Accord]1 is not legally binding , and [the 192 nations that took [part in [the December talks]]] did not formally accept [it]1 .
+But [a sizable group of [those countries]7]6 said [they]7 would accept [[its]6 terms] and provide [plans to reduce [greenhouse gas emissions] by [Jan. 31]] .
+

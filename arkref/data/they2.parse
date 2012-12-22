@@ -1,0 +1,2 @@
+PARSE	-144.89173889160156	(ROOT (S (NP (DT The) (NN team)) (VP (VP (VBD practied) (ADJP (RB very) (JJ hard))) (, ,) (CC and) (VP (ADVP (RB later) (PP (IN on) (NP (PRP they)))) (VBD won) (NP (DT the) (NN game)))) (. .)))
+PARSE	-153.26760864257812	(ROOT (S (S (NP (NP (DT The) (NN herd)) (PP (IN of) (NP (NNS animals)))) (VP (VBD grazed) (PP (IN on) (NP (DT the) (NN land))))) (, ,) (CC and) (S (ADVP (RB then)) (NP (PRP they)) (VP (VBD moved) (PRT (RP on)))) (. .)))

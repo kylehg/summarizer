@@ -1,0 +1,290 @@
+ace_rothdev/VOA20001020_2100_1853
+
+the ship
+ => USS Cole
+ => navy
+
+
+Type info!!
+ M11 <Vladimir Putin>   gold antecedents:
+ M10 <his Russian counterpart | counterpart>,  
+
+=================
+
+jaccard on context sets is no good
+= Resolving	M10 | S2  |     Sg      | O            | (NP (DT the) (NN ship))
+SEMANTICS
+JACC 0.050    ship       --- explosives
+SEMANTICS
+JACC 0.030    ship       --- navy
+SEMANTICS
+JACC 0.001    ship       --- 17
+SEMANTICS
+JACC 0.029    ship       --- Yemen
+SEMANTICS
+JACC 0.055    ship       --- it
+SEMANTICS
+JACC 0.004    ship       --- USS Cole
+SEMANTICS
+JACC 0.030    ship       --- navy
+SEMANTICS
+JACC 0.066    ship       --- US
+No legal candidates
+
+
+....... is this looking reasonable?  the FV intersction ...  corpus count on left
+
+~/coref/arkref % ./wrap.sh data.CDB "USS Cole" "ship"
+loading CDB index/count files... done.
+  global  fv1c fv2c
+  ------  ---- ----
+ 6.4e+04   118    1 | attack on _
+ 2.2e+04     7    2 | crew of _
+ 7.2e+02     7    1 | _ was attacked in
+ 3.4e+03     4    1 | hull of _
+ 5.8e+04     3    1 | hole in _
+ 6.9e+05     2   24 | side of _
+ 6.4e+03     2   72 | _ was attacked by
+ 3.1e+03     1    1 | hunk of _
+ 6.9e+02     1    1 | _ was planned by
+ 7.4e+04     1   12 | _ made for
+ 2.9e+05     1   13 | _ were in
+ 1.1e+05     1    6 | _ were on
+ 1.3e+05     1    7 | data from _
+ 3.1e+05     1   10 | _ are on
+ 4.3e+03     1    5 | _ pulled out of
+ 2.0e+00     1  554 | _ is in
+ 1.6e+04     1   12 | _ is named after
+ 2.5e+05     1    5 | _ comes from
+ 1.4e+04     1   23 | _ was launched in
+ 7.1e+02     1    1 | _ was bought in
+ 5.0e+02     1    7 | _ was rocked by
+ 4.8e+05     1    6 | history of _
+ 7.3e+03     1    4 | _ attacked by
+ 1.4e+04     1    2 | _ followed in
+ 3.0e+00     1    1 | time of _
+ 9.3e+03     1   37 | _ was hit by
+ 2.7e+03     1   44 | _ is attacked by
+ 3.0e+00     1    1 | scale of _
+ 5.3e+03     1    1 | rescue of _
+
+
+
+M18 <Governor George Bush | George Bush>   gold antecedent candidates:
+M17 <Governor>,  
+
+
+town village
+
+=========================================
+syntax
+
+4515 antecedent selection decisions
+... yikes, RIGHT vs WRONG has only 69.6% accuracy
+2695 RIGHT
+641 NOCHANCE
+1179 WRONG
+
+pred-norm accuracy
+
+
+
+====
+current system behavior
+~/coref/arkref % grep resolved log | awk '{print $3}'|count
+695 pronoun
+2114 null
+128 appos
+33 pred-nom
+1540 other
+5 role-appos
+
+
+105	RIGHT resolved appos
+23	WRONG resolved appos
+
+28	RIGHT resolved pred-nom
+5	WRONG resolved pred-nom
+
+5	RIGHT resolved role-appos
+
+
+964	RIGHT resolved null
+509	WRONG resolved null
+641	NOCHANCE resolved null
+
+1133	RIGHT resolved other
+407	WRONG resolved other
+
+460	RIGHT resolved pronoun
+235	WRONG resolved pronoun
+
+
+== Pronoun resolution ==
+
+= Syntactic Type opportunities:
+
+We don't know "Putin" is a person.  This causes errors, because "he" that should resolve go to a different, wrong, entity.
+
+
+= First and second person pronouns, complicated.
+= Dialogue and quotations, complicated.
+
+WRONG resolved pronoun        : M74 -> M72                  NP[he]    ->   NP[defenseman Ray Bourque]
+  == S15  `` We 've always stuck together and we 'll stick by Patrick , '' defenseman Ray Bourque said .
+  == S16  `` We know he is a quality person and a great family man . ''
+
+= See bottom, attempts to solve didn't help
+
+
+== Analyzing Precision Errors ==
+
+= From special short-circuit syntactic rules
+
+Role Appositives are very rare but perfect
+~/coref/arkref % egrep role-appos log | awk '{print $1,$2,$3}'|count
+5 RIGHT resolved role-appos
+
+
+Appositives are mostly good
+105 RIGHT resolved appos
+23 WRONG resolved appos
+
+Appositive errors on locations and misparses
+~/coref/arkref % egrep 'WRONG resolved appos' log                         
+... maybe could solve with rule: either a well-known location, don't pursue resolution
+... mutex constraints from KB
+
+SIGNOFFS
+David Coler , VOA News
+NPR news , Washington
+
+LOCATION METONYMY
+Orange County , Calif.
+Washington , D.C.
+
+(Counting the second as an error is slightly dubious, though the best reading is perhaps as one entity, not two.  It is a complicated case.)
+
+
+Pred-nom: genuine semantic errors from this rule.
+
+ace_rothdev/APW20001120_1450_0376 WRONG resolved pred-nom       : M44 -> M42    NP[Sunni Muslim , which is the majority Islamic sect in the country]    ->   NP[The Taliban]     
+The Taliban are predominantly Sunni Muslim , which is the majority Islamic sect in the country .
+
+ace_rothdev/APW20001202_0257_0120 WRONG resolved pred-nom       : M53 -> M51    NP[Arizona State 's top choice]    ->   NP[Koetter]         
+ace_rothdev/APW20001202_0257_0120 S13  Koetter may not have been Arizona State 's top choice .
+
+NP[that president]    ->   NP[I]
+`` I 'll be that president , '' he added , a sentence that was equal parts promise and prediction .
+
+I think I'm right!!!
+NP[president]    ->   NP[either Bush or Gore]
+S35  `` I can see positives for the Greens with either Bush or Gore being president , '' she said .
+
+Error is due to mismatch between our conventions and ACE conventions.  They have only one entity.
+WRONG resolved pred-nom       : M17 -> M15    NP[the US 's Citibank , Hong Kong 's HSBC , Japan 's Tokyo Mitsubishi Bank , Japan 's Industrial Bank , the Shanghai Branch of the Standard and Chartered Bank , Shanghai 's BNP Paris Bank , the Shanghai Branch of Japan 's Dai-Ichi Kangyo Bank and the Shanghai Branch of Japan 's Sanwa Bank]    ->   NP[They]            
+  == S3   They are the US 's Citibank , Hong Kong 's HSBC , Japan 's Tokyo Mitsubishi Bank , Japan 's Industrial Bank , the Shanghai Branch of the Standard and Chartered Bank , Shanghai 's BNP Paris Bank , the Shanghai Branch of Japan 's Dai-Ichi Kangyo Bank and the Shanghai Branch of Japan 's Sanwa Bank .
+
+
+
+
+
+== Analyzing Recall Errors ==
+
+"Mr", "which", "Dr." embedded mentions.  lame
+
+WRONG resolved null           : M59           NP[Dr. Joanne Lyczkowski-Shultz , a larval specialist with the National Marine Fisheries Service]
+M59 <Dr. Joanne Lyczkowski-Shultz | Joanne Lyczkowski-Shultz>   gold antecedent candidates:
+M58 <Dr.>,  
+
+
+complements
+... Janus Capital, the mutual fund company that is Time Warner's largest shareholder ...
+WRONG resolved null           : M84           SBAR[that is Time Warner 's largest shareholder]
+M84 <that>   gold antecedent candidates:
+M83 <the mutual fund company that is Time Warner's largest shareholder, with more than 120 million shares | company>,  M82 <Janus Capital>,  
+
+
+=========================================
+
+***** baseline *****
+PRECISION:  0.641051
+RECALL:     0.481851
+F1:         0.550166
+
+
+cosine similarity cutoff experiment
+> ecdf(d$cos)(0.5)
+[1] 0.9783452
+PRECISION:  0.4657
+RECALL:     0.488261
+F1:         0.476714
+
+> ecdf(d$cos)(0.3)
+[1] 0.9493185
+PRECISION:  0.325629
+RECALL:     0.51241
+F1:         0.398204
+
+ORACLE
+PRECISION:  0.654467
+RECALL:     0.719684
+F1:         0.685528
+
+
+		Coreferent?	Notes
+America	US	*
+fighters	men	*	The freed men, all said to be fighters belonging...
+area	region	*	flood waters throughout the region... the stricken area
+
+California	Texas	
+China	Japan	
+California	Florida	
+Florida	Texas	
+China	United States	
+China	US	
+Asia	China	
+
+children	people	
+people	students	
+friends	people	
+people	politicians	
+
+
+====
+
+Pronoun-Pronoun matching is hard to improve!
+
+compared to baseline p/r/f  =  64.1 / 48.1 / 55.0
+
+kill all pronoun-pronoun matches .. help prec, hurt rec.
+PRECISION:  0.672673
+RECALL:     0.417381
+F1:         0.515132
+
+jesus, strict matching doesn't save us either!
+PRECISION:  0.662015
+RECALL:     0.434896
+F1:         0.524943
+
+how about: just add check for perspective
+PRECISION:  0.664815
+RECALL:     0.437132
+F1:         0.527452
+
+=========== Type matching ablations =============
+=== Remove gender (barely!) helps
+PRECISION:  0.647305
+RECALL:     0.483417
+F1:         0.553484
+
+=== Remove personhood hurts
+PRECISION:  0.629952
+RECALL:     0.474025
+F1:         0.540977
+
+=== Remove number
+PRECISION:  0.561184
+RECALL:     0.460759
+F1:         0.506037
+

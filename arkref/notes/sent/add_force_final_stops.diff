@@ -1,0 +1,82 @@
+--- /tmp/zshyen5C8	2009-11-22 17:33:50.000000000 -0500
++++ r82ish.log	2009-11-22 17:27:44.000000000 -0500
+@@ -249,6 +249,7 @@
+ SENTENCE	It surveyed more than 3,000 schools to find out undergraduate charges for 2000 - 2001 .
+ SENTENCE	The companion survey on financial aid , was based on federal , state and school statistics from 1999 - 2000 .
+ SENTENCE	Current grant and loan figures are not available until the school year ends .
++SENTENCE	_ _ _ _ On the Net : http : / / www . collegeboard . org American Council on Education : http : / / www . acenet . edu
+ 
+ DOCUMENT	ace_rothdev/APW20001017_1313_0396.txt
+ CAPRATIO	1.193340
+@@ -466,6 +467,7 @@
+ SENTENCE	Holtz said the Zhang and Zhou study is important because it adds new understanding about the Enantiornithine , a bird group that dominated the latter part of the age of dinosaurs .
+ SENTENCE	`` The Enantiornithine got clobbered in the extinction event '' that killed off the dinosaurs about 65 million years ago , he said .
+ SENTENCE	This was followed by the dominance of another bird group , the Ornithurae , which later evolved into modern birds , said Holtz .
++SENTENCE	_ _ _ On the Net : Science journal : http : / / www . eurekalert . org Dinosaurs : http : / / www . micro . utexas . edu / courses / mcmurry / spring98 / 21 / justin . html
+ 
+ DOCUMENT	ace_rothdev/APW20001208_1126_0362.txt
+ CAPRATIO	2.046229
+@@ -546,6 +548,7 @@
+ SENTENCE	In the Northeast , a few light snow showers were scattered from Pennsylvania across upstate New York into northern New England .
+ SENTENCE	Elsewhere , fog formed in some western parts of Washington , and showers were expected to move into the region from the Pacific .
+ SENTENCE	Monday ' s temperatures around the Lower 48 ranged from a morning low of 11 below zero at Phillips , Wis . , to midday readings of 77 at Oceanside , Calif . , and Brownsville , Texas .
++SENTENCE	The lowest wind chill was 58 below at Jamestown , N . D . _ _ _ On the Net : National Weather Service : http : / / iwin . nws . noaa . gov / iwin / graphicsversion / bigmain . html Intellicast : http : / / www . intellicast . com Weather Channel : http : / / www . weather . com
+ 
+ DOCUMENT	ace_rothdev/APW20001219_1316_0416.txt
+ CAPRATIO	2.038961
+@@ -598,6 +601,7 @@
+ SENTENCE	For example , as instant messaging migrates to cell phones or hand - held computer organizers , consumers won ' t want to have to install multiple services on these devices , said Brian Park , senior product for Yahoo !
+ SENTENCE	Communications Services .
+ SENTENCE	`` You can have the best service and the coolest features , but nobody is going to use it if it doesn ' t communicate with other services , '' Park said .
++SENTENCE	_ _ _ On the Net : America Online corporate site : http : / / corp . aol . com IMUnified , coalition formed by AT & AMP ; T , ExciteAtHome , Microsoft : http : / / www . imunified . org /
+ 
+ DOCUMENT	ace_rothdev/CHTB_165_ENG.txt
+ CAPRATIO	2.241685
+@@ -612,6 +616,7 @@
+ SENTENCE	Now , the Templeton Company has formally signed a contract , and bought the floor area of the entire 18th floor of the Securities Building .
+ SENTENCE	Currently , foreign - capital banks and financial institutions such as Hong Kong ' s HSBC , the Shanghai Branch of the Japan Industrial Bank , the Holland Co - operation Bank , Shanghai Branch of the Belgium Credit Bank , etc . , have successively settled down in the Lujiazui Financial Trading District .
+ SENTENCE	Soon , a large number of domestic and foreign financial institutions , and large companies will also come to successively settle down , including the finance street which has already formed in the Waitan district , and the Shanghai central commercial district framework that is forming .
++SENTENCE	( End )
+ 
+ DOCUMENT	ace_rothdev/CHTB_171_ENG.txt
+ CAPRATIO	1.493827
+@@ -629,6 +634,7 @@
+ SENTENCE	Russian troops stationed in Lithuania had withdrawn to Russia one year earlier .
+ SENTENCE	On August 31st of this year , Russian troops stationed in Latvia withdrew completely and Russian troops stationed in Estonia also completed withdrawal on August 29th of this year .
+ SENTENCE	In an interview with International Correspondence Communication News Agency on the 31st , Klelov , vice - minister of Russia ' s Foreign Affairs , pointed out that , although Russia has withdrawn its troops from the Baltic Sea countries , if the Baltic Sea countries infringe upon the rights of local Russian - speaking residents , the Russian government still has measures for exerting influence over these countries , which include political , economical and humanitarian measures .
++SENTENCE	( End )
+ 
+ DOCUMENT	ace_rothdev/CHTB_267_ENG.txt
+ CAPRATIO	1.370370
+@@ -652,6 +658,7 @@
+ SENTENCE	As the gross national product in China ' s coastal regions begins to approach this benchmark , it can be said to have had the conditions for electricity generation using natural gas in terms of financial resources .
+ SENTENCE	John Weir , president of the Weir Group who visited China with US Minister Brown and signed this agreement for electricity generation plant construction in Jiangsu , held that now is the best time to develop a project of joint circulatory electricity generation plant with natural gas as fuel in China .
+ SENTENCE	Both parties , the US and China , will invest more time , money and resources to make this power plant project a successful model .
++SENTENCE	( End )
+ 
+ DOCUMENT	ace_rothdev/CNN20001203_0900_0606.txt
+ CAPRATIO	0.004329
+@@ -688,6 +695,7 @@
+ SENTENCE	baghdad is insisting that its customers pay a 50 cent surcharge on every barrel of oil .
+ SENTENCE	it ' s also threatening to boycott the sale of oil to countries it views as hostile .
+ SENTENCE	it didn ' t give any specific examples , but the united states is an obvious target .
++SENTENCE	iraq is the sixth largest supplier of crude oil to the u . s .
+ 
+ DOCUMENT	ace_rothdev/CNN20001214_1400_0609.txt
+ CAPRATIO	0.012346
+@@ -1022,6 +1030,7 @@
+ SENTENCE	_ How appealing was a recent offer made by Sprint Communications Co . to give buyers of a Sprint PCS telephone and a calling plan a free `` pre - owned phone '' ? _ Was it an inside joke that the name of the character played by John Corbett on `` Sex and the City , '' Aidan Shaw , was almost identical to the name of a longtime star of gay sex films , Aiden Shaw ?
+ SENTENCE	_ How many tickets did the Houston Grand Opera sell after mailing out a promotional brochure featuring photographs of cattle with headlines like `` It ' s udderly fantastic entertainment ! '' and `` Great opera .
+ SENTENCE	No bull . '' ? _ If CBS shows the first episode of `` Survivor II '' after its broadcast of Super Bowl XXXV , will the network someday show the first episode of `` Survivor XXXV '' after its broadcast of Super Bowl LXVIII ?
++SENTENCE	_ Will cheerful chorus members dressed in V - neck sweaters interrupt their serenades to online shopping long enough to tell an advertising columnist , `` You ask a lot of questions for someone from Brooklyn '' ?
+ 
+ DOCUMENT	ace_rothdev/NYT20001124_2050_0257.txt
+ CAPRATIO	1.402075
+@@ -1187,6 +1196,7 @@
+ SENTENCE	_ Make it a federal case .
+ SENTENCE	Send a copy of your letter to Washington .
+ SENTENCE	Complaints are charged against each airline in the Transportation Department ' s monthly Air Travel Consumer Report and serve as a basis for rule making and enforcement action .
++SENTENCE	Write to : Aviation Consumer Protection Div . ( C - 75 ) Department of Transportation 400 Seventh St . S . W . Washington , DC 20590
+ 
+ DOCUMENT	ace_rothdev/PRI20001031_2000_1824.txt
+ CAPRATIO	1.607735

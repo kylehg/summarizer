@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="lib/simple-xml-2.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.4.jar" sourcepath="lib/commons-lang-2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://commons.apache.org/lang/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/stanford-parser-2008-10-26.jar" sourcepath="/stanford-parser-2008-10-26/src">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/brendano/sw/stanfordnlp/stanford-parser-2008-10-26/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lingpipe-3.8.2.jar" sourcepath="/lingpipe-3.8.2">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/Users/brendano/sw/lingpipe-3.8.2/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/supersense-tagger.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

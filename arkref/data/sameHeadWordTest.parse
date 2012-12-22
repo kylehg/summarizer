@@ -1,0 +1,2 @@
+PARSE	-130.9344024658203	(ROOT (S (NP (DT The) (ADJP (JJ nice) (, ,) (JJ smart)) (NN boy)) (VP (VBD liked) (S (VP (TO to) (VP (VB play) (PP (IN in) (NP (DT the) (NN park))))))) (. .)))
+PARSE	-102.54212951660156	(ROOT (S (NP (DT This) (NN boy)) (ADVP (RB also)) (VP (VBD liked) (S (VP (TO to) (VP (VB play) (NP (NN soccer)))))) (. .)))

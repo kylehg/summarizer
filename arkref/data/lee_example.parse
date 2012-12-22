@@ -1,0 +1,3 @@
+PARSE	-36.41688919067383	(ROOT (S (NP (DT This) (NN film)) (VP (MD should) (VP (VB be) (ADJP (JJ brilliant)))) (. .)))
+PARSE	-194.14964294433594	(ROOT (S (S (NP (PRP It)) (VP (VBZ sounds) (PP (IN like) (NP (DT a) (JJ great) (NN plot))))) (PRN (, ,) (S (NP (DT the) (NNS actors)) (VP (VBP are) (NP (JJ first) (NN grade)))) (, ,)) (CC and) (S (S (NP (DT the) (JJ supporting) (NN cast)) (VP (VBZ is) (ADJP (JJ good) (PP (IN as) (ADVP (RB well)))))) (, ,) (CC and) (S (NP (NNP Stallone)) (VP (VBZ is) (VP (VBG attempting) (S (VP (TO to) (VP (VB deliver) (NP (DT a) (JJ good) (NN performance))))))))) (. .)))
+PARSE	-32.513492584228516	(ROOT (S (ADVP (RB However)) (, ,) (NP (PRP it)) (VP (MD ca) (RB n't) (VP (VB hold) (PRT (RP up)))) (. .)))

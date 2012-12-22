@@ -91,7 +91,7 @@ def get_sent_dict(all_sents, entlist):
     sent_dict = dict()
     for sent in all_sents:
         # scoring number one CHANGE
-        sent_dict[sent] = count_ents(sent, entlist)
+        sent_dict[sent] = count_ents(sent, entlist)/len(word_tokenize(sent))
     return sent_dict
 
 def generate_summary(taggeddir, untaggeddir):
@@ -107,4 +107,12 @@ def generate_summary(taggeddir, untaggeddir):
     return " ".join(word_tokenize(" ".join(pretty))[:100])
 
 if __name__ == '__main__':
-    build_all_corefs("../input/")
+    # build_all_corefs("../input/")
+    for rawdir in ls("../input/"):
+        name = rawdir.split("/")[-1][0:11]
+        if name[0] != ".":
+            taggeddir = "../coref-tagged/" + name + "_tagged"
+            summary = generate_summary(taggeddir, rawdir)
+            sumfile = open("../hg-summaries/" + name, "w")
+            sumfile.write(summary)
+

@@ -28,9 +28,8 @@ def load_topic_words(topic_file):
     topic_words_dict = dict()
     raw = open(topic_file).read()
     lines = line_tokenize(raw)
-    for line in lines:
+    for line in lines: # no cutoff outside of TopicS 0.1
         pair = line.split(" ")
-        # no extra cutoff (0.1) CHANGE
         topic_words_dict[pair[0]] = float(pair[1])
     return topic_words_dict
 
@@ -42,10 +41,19 @@ def count_topicwords(sentence, tw_dict):
     return tw_count
 
 def generate_sentence_dict(all_sents, tw_dict):
+    stopwords = open("TopicWords-v1/stoplist-smart-sys.txt").readlines()
     sent_dict = dict()
     for sent in all_sents:
-        # scoring number one CHANGE
-        sent_dict[sent] = count_topicwords(sent, tw_dict)
+        # scoring number one
+        # sent_dict[sent] = count_topicwords(sent, tw_dict)
+        # scoring number two
+        # sent_dict[sent] = count_topicwords(sent, tw_dict)/len(word_tokenize(sent))
+        # scoring number three
+        wordcount = 0
+        for word in word_tokenize(sent):
+            if word not in stopwords:
+                wordcount += 1
+        sent_dict[sent] =  count_topicwords(sent, tw_dict)/wordcount
     return sent_dict
 
 def generate_summary(topic_file, to_summarize):

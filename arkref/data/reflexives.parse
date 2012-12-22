@@ -1,0 +1,7 @@
+PARSE	-68.11734008789062	(ROOT (S (NP (NNP John)) (VP (VBD bought) (S (NP (PRP himself)) (NP (DT a) (NN book)))) (. .)))
+PARSE	-106.14317321777344	(ROOT (S (NP (NNP Bob)) (VP (VBD knew) (SBAR (IN that) (S (NP (NNP John)) (VP (VBD bought) (S (NP (PRP himself)) (NP (DT a) (NN book))))))) (. .)))
+PARSE	-103.53755187988281	(ROOT (S (NP (NNP John)) (VP (VBD knew) (SBAR (IN that) (S (NP (NNP Bob)) (VP (VBD bought) (S (NP (PRP him)) (NP (DT a) (NN book))))))) (. .)))
+PARSE	-56.79561996459961	(ROOT (S (NP (DT The) (NN company)) (VP (VBN ruined) (NP (PRP itself))) (. .)))
+PARSE	-75.21346282958984	(ROOT (S (NP (DT The) (NN corporation)) (VP (VBN ruined) (NP (PRP$ its) (NNS chances))) (. .)))
+PARSE	-53.55070114135742	(ROOT (S (NP (DT The) (NN bank)) (VP (VBN ruined) (NP (PRP it))) (. .)))
+PARSE	-62.108768463134766	(ROOT (S (NP (NNP James)) (VP (VBD believed) (SBAR (IN that) (S (NP (PRP he)) (VP (MD could) (VP (VB win)))))) (. .)))

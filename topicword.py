@@ -59,3 +59,12 @@ def generate_summary(topic_file, to_summarize):
             pretty.append(sent[0])
     # return 100 words
     return " ".join(word_tokenize(" ".join(pretty))[:100])
+
+if __name__ == '__main__':
+    for file in utils.ls("input/"):
+        name = file.split("/")[-1][0:7]
+        if name[0] != ".":
+            summary = generate_summary("tsfiles/" + name + ".ts", file)
+            sumfile = open("tw-summaries/" + name, "w")
+            sumfile.write(summary)
+

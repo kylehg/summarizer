@@ -1,0 +1,3 @@
+(ROOT (S=H (S=H (NP (NNP=H Bob)) (VP=H (VBD=H went) (PP (TO=H to) (NP (DT the) (NN=H store))))) (, ,) (CC and) (S (NP (PRP=H it)) (VP=H (VBD=H sucked))) (. .)))
+(ROOT (S=H (NP (PRP=H It)) (VP=H (VBD=H was) (VP (VBN=H closed))) (. .)))
+(ROOT (S=H (NP (PRP=H He)) (VP=H (VBD=H looked) (PRT (RP=H around)) (NP (PRP=H it)) (ADVP (RB=H too))) (. .)))

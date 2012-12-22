@@ -1,0 +1,430 @@
+--- e76d90c.log	2009-11-23 14:31:03.000000000 -0500
++++ log	2009-11-23 14:31:34.000000000 -0500
+@@ -33643,21 +33643,21 @@
+ TOKEN [,]  :  
+   Aligned to pos=130 : [,''\nLittle]
+ TOKEN ['']  :  
+   Aligned to pos=131 : [''\nLittle ]
+ TOKEN [Little]  :  \n
+   Aligned to pos=134 : [Little sai]
+ TOKEN [said]  :   
+   Aligned to pos=141 : [said. \n]
+ TOKEN [.]  :  
+   Aligned to pos=145 : [. \n]
+-SENTENCE WORDS     [Parkhurst/O, later/O, merged/O, with/O, another/O, company/O, that/O, owned/O, Road/O, &/ORGANIZATION, Track/O, to/O, become/O, Bond\/Parkhurst/O, Publishing/O, ./O]
++SENTENCE WORDS     [Parkhurst/O, later/O, merged/O, with/O, another/O, company/O, that/O, owned/O, Road/O, &/ORGANIZATION, Track/O, to/O, become/O, Bond/Parkhurst/O, Publishing/O, ./O]
+ TOKEN [Parkhurst]  :  \n
+   Aligned to pos=1 : [Parkhurst ]
+ TOKEN [later]  :   
+   Aligned to pos=11 : [later merg]
+ TOKEN [merged]  :   
+   Aligned to pos=17 : [merged wit]
+ TOKEN [with]  :   
+   Aligned to pos=24 : [with anoth]
+ TOKEN [another]  :   
+   Aligned to pos=29 : [another co]
+@@ -33670,22 +33670,23 @@
+ TOKEN [Road]  :   
+   Aligned to pos=56 : [Road & Tra]
+ TOKEN [&]  :   
+   Aligned to pos=61 : [& Track\nto]
+ TOKEN [Track]  :   
+   Aligned to pos=63 : [Track\nto b]
+ TOKEN [to]  :  \n
+   Aligned to pos=69 : [to become ]
+ TOKEN [become]  :   
+   Aligned to pos=72 : [become Bon]
+-TOKEN [Bond\/Parkhurst]  :   Bond/Parkhurst Publishing.  FAILED MATCH for token [Bond\/Parkhurst]
+-TOKEN [Publishing]  :   Bond/Parkhurst 
++TOKEN [Bond/Parkhurst]  :   
++  Aligned to pos=79 : [Bond/Parkh]
++TOKEN [Publishing]  :   
+   Aligned to pos=94 : [Publishing]
+ TOKEN [.]  :  
+   Aligned to pos=104 : [.]
+ SENTENCE WORDS     [He/O, sold/O, both/O, magazines/O, in/O, the/O, early/DATE, 1970s/O, ,/O, said/O, his/O, wife/O, of/O, 22/DATE, years/DATE, ./O]
+ TOKEN [He]  :   
+   Aligned to pos=1 : [He sold bo]
+ TOKEN [sold]  :   
+   Aligned to pos=4 : [sold both ]
+ TOKEN [both]  :   
+   Aligned to pos=9 : [both magaz]
+@@ -34241,23 +34242,23 @@
+ Ace Mention to Align:  pos=1685  :  M73  | Road & Track | Road & Track
+   no string match pos=1674  :  that/O
+   no string match pos=1679  :  owned/O
+ Alignment!  Word:ACE  1685:1685  :   [Road/O         ]  <->  [M73  | Road & Track | Road & Track                          ]
+ Ace Mention to Align:  pos=1708  :  M74  | Bond/Parkhurst Publishing | Bond/Parkhurst Publishing
+   no string match pos=1685  :  Road/O
+   no string match pos=1690  :  &/ORGANIZATION
+   no string match pos=1692  :  Track/O
+   no string match pos=1698  :  to/O
+   no string match pos=1701  :  become/O
+-  no string match pos=1707  :  Bond\/Parkhurst/O
+-Alignment!  Word:ACE  1723:1708  :   [Publishing/O   ]  <->  [M74  | Bond/Parkhurst Publishing | Bond/Parkhurst Publishing]
++Alignment!  Word:ACE  1708:1708  :   [Bond/Parkhurst/O]  <->  [M74  | Bond/Parkhurst Publishing | Bond/Parkhurst Publishing]
+ Ace Mention to Align:  pos=1735  :  M105 | He | He
++  no string match pos=1708  :  Bond/Parkhurst/O
+   no string match pos=1723  :  Publishing/O
+   no string match pos=1733  :  ./O
+ Alignment!  Word:ACE  1735:1735  :   [He/O           ]  <->  [M105 | He | He                                              ]
+ Ace Mention to Align:  pos=1783  :  M2   | his | his
+   no string match pos=1761  :  the/O
+   no string match pos=1765  :  early/DATE
+   no string match pos=1771  :  1970s/O
+   no string match pos=1776  :  ,/O
+   no string match pos=1778  :  said/O
+ Alignment!  Word:ACE  1783:1783  :   [his/O          ]  <->  [M2   | his | his                                            ]
+@@ -50517,31 +50518,32 @@
+ TOKEN [two]  :   
+   Aligned to pos=155 : [two weeken]
+ TOKEN [weekends]  :   
+   Aligned to pos=159 : [weekends t]
+ TOKEN [to]  :   
+   Aligned to pos=168 : [to go.]
+ TOKEN [go]  :   
+   Aligned to pos=171 : [go.]
+ TOKEN [.]  :  
+   Aligned to pos=173 : [.]
+-SENTENCE WORDS     [according/O, to/O, today/DATE, 's/O, msnbc\/reuters/O, tracking/O, poll/O, ,/O, gore/O, is/O, hanging/O, onto/O, a/O, two-point/O, lead/O, over/O, bush/O, for/O, the/O, second/O, day/O, in/O, a/O, row/O, ./O]
++SENTENCE WORDS     [according/O, to/O, today/DATE, 's/O, msnbc/reuters/O, tracking/O, poll/O, ,/O, gore/O, is/O, hanging/O, onto/O, a/O, two-point/O, lead/O, over/O, bush/O, for/O, the/O, second/O, day/O, in/O, a/O, row/O, ./O]
+ TOKEN [according]  :   
+   Aligned to pos=1 : [according ]
+ TOKEN [to]  :   
+   Aligned to pos=11 : [to\ntoday's]
+ TOKEN [today]  :  \n
+   Aligned to pos=14 : [today's ms]
+ TOKEN ['s]  :  
+   Aligned to pos=19 : ['s msnbc/r]
+-TOKEN [msnbc\/reuters]  :   msnbc/reuters tracking poll, gore is hanging onto a\ntwo-point lead over bush for the second day in   FAILED MATCH for token [msnbc\/reuters]
+-TOKEN [tracking]  :   msnbc/reuters 
++TOKEN [msnbc/reuters]  :   
++  Aligned to pos=22 : [msnbc/reut]
++TOKEN [tracking]  :   
+   Aligned to pos=36 : [tracking p]
+ TOKEN [poll]  :   
+   Aligned to pos=45 : [poll, gore]
+ TOKEN [,]  :  
+   Aligned to pos=49 : [, gore is ]
+ TOKEN [gore]  :   
+   Aligned to pos=51 : [gore is ha]
+ TOKEN [is]  :   
+   Aligned to pos=56 : [is hanging]
+ TOKEN [hanging]  :   
+@@ -51584,43 +51586,44 @@
+ TOKEN [president]  :   
+   Aligned to pos=35 : [president ]
+ TOKEN [in]  :   
+   Aligned to pos=45 : [in pittsbu]
+ TOKEN [pittsburgh]  :   
+   Aligned to pos=48 : [pittsburgh]
+ TOKEN [tonight]  :   
+   Aligned to pos=59 : [tonight. \n]
+ TOKEN [.]  :  
+   Aligned to pos=66 : [. \n\n\n\n]
+-SENTENCE WORDS     [reporter/O, :/O, tom/O, ,/O, making/O, it/O, abundantly/O, clear/O, that/O, the/O, clinton\/gore/O, scandals/O, of/O, the/O, past/O, eight/O, years/DATE, will/O, be/O, a/O, major/O, theme/O, in/O, the/O, closing/O, days/O, of/O, this/O, campaign/O, ,/O, bush/O, attacks/O, the/O, vice/O, president/O, for/O, being/O, a/O, failed/O, leader/O, and/O, promises/O, if/O, he/O, 's/O, elected/O, americans/O, will/O, once/O, again/O, be/O, able/O, to/O, respect/O, their/O, government/O, ./O]
++SENTENCE WORDS     [reporter/O, :/O, tom/O, ,/O, making/O, it/O, abundantly/O, clear/O, that/O, the/O, clinton/gore/O, scandals/O, of/O, the/O, past/O, eight/O, years/DATE, will/O, be/O, a/O, major/O, theme/O, in/O, the/O, closing/O, days/O, of/O, this/O, campaign/O, ,/O, bush/O, attacks/O, the/O, vice/O, president/O, for/O, being/O, a/O, failed/O, leader/O, and/O, promises/O, if/O, he/O, 's/O, elected/O, americans/O, will/O, once/O, again/O, be/O, able/O, to/O, respect/O, their/O, government/O, ./O]
+ TOKEN [reporter]  :   
+   Aligned to pos=1 : [reporter: ]
+ TOKEN [:]  :  
+   Aligned to pos=9 : [: \n\ntom, m]
+ TOKEN [tom]  :   \n\n
+   Aligned to pos=13 : [tom, makin]
+ TOKEN [,]  :  
+   Aligned to pos=16 : [, making i]
+ TOKEN [making]  :   
+   Aligned to pos=18 : [making it ]
+ TOKEN [it]  :   
+   Aligned to pos=25 : [it abundan]
+ TOKEN [abundantly]  :   
+   Aligned to pos=28 : [abundantly]
+ TOKEN [clear]  :   
+   Aligned to pos=39 : [clear that]
+ TOKEN [that]  :   
+   Aligned to pos=45 : [that the c]
+ TOKEN [the]  :   
+   Aligned to pos=50 : [the clinto]
+-TOKEN [clinton\/gore]  :   clinton/gore scandals of\nthe past eight years will be a major theme in the closing days of\nthis cam  FAILED MATCH for token [clinton\/gore]
+-TOKEN [scandals]  :   clinton/gore 
++TOKEN [clinton/gore]  :   
++  Aligned to pos=54 : [clinton/go]
++TOKEN [scandals]  :   
+   Aligned to pos=67 : [scandals o]
+ TOKEN [of]  :   
+   Aligned to pos=76 : [of\nthe pas]
+ TOKEN [the]  :  \n
+   Aligned to pos=79 : [the past e]
+ TOKEN [past]  :   
+   Aligned to pos=83 : [past eight]
+ TOKEN [eight]  :   
+   Aligned to pos=88 : [eight year]
+ TOKEN [years]  :   
+@@ -51759,21 +51762,21 @@
+ TOKEN [his]  :   
+   Aligned to pos=158 : [his\ncabine]
+ TOKEN [cabinet]  :  \n
+   Aligned to pos=162 : [cabinet if]
+ TOKEN [if]  :   
+   Aligned to pos=170 : [if elected]
+ TOKEN [elected]  :   
+   Aligned to pos=173 : [elected.]
+ TOKEN [.]  :  
+   Aligned to pos=180 : [.]
+-SENTENCE WORDS     [today/DATE, 's/O, address/O, focuses/O, on/O, ``/O, responsible/O, leadership/O, ''/O, and/O, how/O, on/O, issues/O, like/O, social/O, security/O, and/O, medicare/O, ,/O, the/O, clinton\/gore/O, administration/O, has/O, failed/O, to/O, pr/O, they/O, are/O, going/O, out/O, as/O, they/O, came/O, in/O, --/O, their/O, guide/O, ,/O, the/O, nightly/O, polls/O, ./O]
++SENTENCE WORDS     [today/DATE, 's/O, address/O, focuses/O, on/O, ``/O, responsible/O, leadership/O, ''/O, and/O, how/O, on/O, issues/O, like/O, social/O, security/O, and/O, medicare/O, ,/O, the/O, clinton/gore/O, administration/O, has/O, failed/O, to/O, pr/O, they/O, are/O, going/O, out/O, as/O, they/O, came/O, in/O, --/O, their/O, guide/O, ,/O, the/O, nightly/O, polls/O, ./O]
+ TOKEN [today]  :   
+   Aligned to pos=1 : [today's ad]
+ TOKEN ['s]  :  
+   Aligned to pos=6 : ['s address]
+ TOKEN [address]  :   
+   Aligned to pos=9 : [address fo]
+ TOKEN [focuses]  :   
+   Aligned to pos=17 : [focuses on]
+ TOKEN [on]  :   
+   Aligned to pos=25 : [on "respon]
+@@ -51800,22 +51803,23 @@
+ TOKEN [security]  :   
+   Aligned to pos=83 : [security a]
+ TOKEN [and]  :   
+   Aligned to pos=92 : [and medica]
+ TOKEN [medicare]  :   
+   Aligned to pos=96 : [medicare, ]
+ TOKEN [,]  :  
+   Aligned to pos=104 : [, the\nclin]
+ TOKEN [the]  :   
+   Aligned to pos=106 : [the\nclinto]
+-TOKEN [clinton\/gore]  :  \nclinton/gore administration has failed to pr \n\n\nthey are going out as they came in -- their guide,   FAILED MATCH for token [clinton\/gore]
+-TOKEN [administration]  :  \nclinton/gore 
++TOKEN [clinton/gore]  :  \n
++  Aligned to pos=110 : [clinton/go]
++TOKEN [administration]  :   
+   Aligned to pos=123 : [administra]
+ TOKEN [has]  :   
+   Aligned to pos=138 : [has failed]
+ TOKEN [failed]  :   
+   Aligned to pos=142 : [failed to ]
+ TOKEN [to]  :   
+   Aligned to pos=149 : [to pr \n\n\nt]
+ TOKEN [pr]  :   
+   Aligned to pos=152 : [pr \n\n\nthey]
+ TOKEN [they]  :   \n\n\n
+@@ -52011,21 +52015,21 @@
+ TOKEN [gore]  :  \n
+   Aligned to pos=67 : [gore, obvi]
+ TOKEN [,]  :  
+   Aligned to pos=71 : [, obviousl]
+ TOKEN [obviously]  :   
+   Aligned to pos=73 : [obviously.]
+ TOKEN [.]  :  
+   Aligned to pos=82 : [.]
+ ***  ACE alignments ***
+ 
+-ace offset diff histogram: {237=1, 222=1, 71=1, 64=7, 65=1, 583=1, 432=1, 176=1, 496=1}
++ace offset diff histogram: {237=1, 222=1, 70=1, 64=8, 431=1, 583=1, 176=1, 496=1}
+ Using offset: 64
+ All Mentions:  [M1   | national | national, M117 | president | vice president, M85  | al gore | vice president al gore, M119 | governor | governor, M118 | george w. bush | governor george w. bush, M120 | one | one, M121 | other | the other, M122 | msnbc | msnbc, M128 | reuters | reuters, M123 | gore | gore, M124 | bush | bush, M126 | nbc | nbc, M125 | david gregory | nbc's david gregory, M127 | governor | the governor, M116 | claire shipman | claire shipman, M129 | president | the vice president, M130 | claire | claire, M132 | gore | gore, M131 | campaign | the gore campaign, M2   | ralph nader | ralph nader, M3   | tom | tom, M4   | al gore | al gore, M5   | his | his, M24  | ralph nader | ralph nader, M6   | al gore | al gore, M25  | midwest | the midwest, M26  | voters | voters, M7   | his | his, M27  | environmentalist | environmentalist, M28  | we | we, M29  | u.n. | u.n., M113 | global | global, M8   | he | he, M9   | his | his, M30  | diners | diners, M10  | i | i, M31  | people | people, M32  | global | global, M34  | personality | tv personality, M33  | queen latifah | tv personality queen latifah, M35  | voters | those critical undecided voters, M36  | supporters | the supporters of this man, ralph nader, M38  | man | this man, M39  | ralph nader | ralph nader, M114 | distraction | a minor distraction, M11  | gore | gore, M40  | aides | gore aides, M42  | nader | nader, M41  | them | them, M43  | nader | nader, M103 | oregon | oregon, M12  | gore | gore, M104 | bush | bush, M13  | gore | gore, M44  | nader | nader, M107 | democratic | democratic, M106 | minnesota | in traditionally democratic minnesota, M105 | bush | bush, M14  | gore | gore, M45  | nader | nader, M108 | here | here in wisconsin, M109 | wisconsin | wisconsin, M15  | gore | gore, M110 | bush | bush, M46  | nader | nader, M111 | democrats | democrats, M48  | nader | nader, M112 | supporters | nader supporters, M47  | gore | gore, M49  | bill bradley | former gore rival bill bradley, M50  | washington state | washington state, M51  | organizations | pro-choice organizations, M52  | nader | nader, M53  | woman | a woman, M54  | nader | nader, M55  | your | your, M56  | groups | environmental groups, M57  | democrats | some prominent democrats, M58  | new york times | the new york times, M59  | states | states like oregon and minnesota, M61  | oregon | oregon, M62  | minnesota | minnesota, M16  | gore | gore, M63  | tom | tom, M65  | nbc | nbc, M64  | claire shipman | nbc's claire shipman, M67  | governor | governor, M66  | bush | governor bush, M68  | he | he, M17  | president | the vice president, M76  | nbc | nbc, M75  | david gregory | nbc's david gregory with the vice president in pittsburgh tonight, M18  | president | the vice president, M77  | pittsburgh | pittsburgh, M78  | tom | tom, M79  | clinton | clinton, M19  | gore | gore, M69  | bush | bush, M20  | president | the vice president, M80  | leader | a failed leader, M70  | he | he, M81  | americans | americans, M82  | their | their, M83  | government | their government, M71  | bush | bush, M84  | state | this tough battleground state, M87  | general | general, M86  | colin powell | the popular retired general colin powell, M88  | powell | powell, M89  | member | a member of his cabinet, M72  | his | his, M90  | cabinet | his cabinet, M91  | clinton | clinton, M21  | gore | gore, M92  | administration | the clinton/gore administration, M93  | they | they, M94  | they | they, M95  | their | their, M96  | their | their, M97  | their | their, M98  | advisers | advisers, M99  | aides | aides, M100 | states | eight different states bill clinton carried the last two elections, M101 | bill clinton | bill clinton, M102 | tom | tom, M115 | david gregory | david gregory tonight with governor bush, not with vice president gore, obviously, M74  | governor | governor, M73  | bush | governor bush, M23  | president | vice president, M22  | gore | vice president gore]
+ Ace Mention to Align:  pos=29   :  M1   | national | national
+   no string match pos=6    :  evening/TIME
+   no string match pos=13   :  ./O
+   no string match pos=15   :  there/O
+   no string match pos=21   :  is/O
+   no string match pos=23   :  n't/O
+   no string match pos=27   :  a/O
+ Alignment!  Word:ACE  29  :29    :   [national/O     ]  <->  [M1   | national | national                                  ]
+@@ -52053,25 +52057,25 @@
+ Alignment!  Word:ACE  147 :147   :   [one/O          ]  <->  [M120 | one | one                                            ]
+ Ace Mention to Align:  pos=158  :  M121 | other | the other
+   no string match pos=147  :  one/O
+   no string match pos=151  :  or/O
+ Alignment!  Word:ACE  154 :158   :   [the/O          ]  <->  [M121 | other | the other                                    ]
+ Ace Mention to Align:  pos=210  :  M122 | msnbc | msnbc
+   no string match pos=189  :  according/O
+   no string match pos=199  :  to/O
+   no string match pos=202  :  today/DATE
+   no string match pos=207  :  's/O
+-Alignment!  Word:ACE  209 :210   :   [msnbc\/reuters/O]  <->  [M122 | msnbc | msnbc                                        ]
++Alignment!  Word:ACE  210 :210   :   [msnbc/reuters/O]  <->  [M122 | msnbc | msnbc                                        ]
+ Ace Mention to Align:  pos=216  :  M128 | reuters | reuters
+-Alignment!  Word:ACE  209 :216   :   [msnbc\/reuters/O]  <->  [M128 | reuters | reuters                                    ]
++Alignment!  Word:ACE  210 :216   :   [msnbc/reuters/O]  <->  [M128 | reuters | reuters                                    ]
+ Ace Mention to Align:  pos=239  :  M123 | gore | gore
+-  no string match pos=209  :  msnbc\/reuters/O
++  no string match pos=210  :  msnbc/reuters/O
+   no string match pos=224  :  tracking/O
+   no string match pos=233  :  poll/O
+   no string match pos=237  :  ,/O
+ Alignment!  Word:ACE  239 :239   :   [gore/O         ]  <->  [M123 | gore | gore                                          ]
+ Ace Mention to Align:  pos=282  :  M124 | bush | bush
+   no string match pos=262  :  two-point/O
+   no string match pos=272  :  lead/O
+   no string match pos=277  :  over/O
+ Alignment!  Word:ACE  282 :282   :   [bush/O         ]  <->  [M124 | bush | bush                                          ]
+ Ace Mention to Align:  pos=577  :  M126 | nbc | nbc
+@@ -52673,25 +52677,25 @@
+ Alignment!  Word:ACE  2943:2758  :   [tom/O          ]  <->  [M78  | tom | tom                                            ]
+ Ace Mention to Align:  pos=2799  :  M79  | clinton | clinton
+   no string match pos=2943  :  tom/O
+   no string match pos=2946  :  ,/O
+   no string match pos=2948  :  making/O
+   no string match pos=2955  :  it/O
+   no string match pos=2958  :  abundantly/O
+   no string match pos=2969  :  clear/O
+   no string match pos=2975  :  that/O
+   no string match pos=2980  :  the/O
+-Alignment!  Word:ACE  2983:2799  :   [clinton\/gore/O]  <->  [M79  | clinton | clinton                                    ]
++Alignment!  Word:ACE  2984:2799  :   [clinton/gore/O ]  <->  [M79  | clinton | clinton                                    ]
+ Ace Mention to Align:  pos=2807  :  M19  | gore | gore
+-Alignment!  Word:ACE  2983:2807  :   [clinton\/gore/O]  <->  [M19  | gore | gore                                          ]
++Alignment!  Word:ACE  2984:2807  :   [clinton/gore/O ]  <->  [M19  | gore | gore                                          ]
+ Ace Mention to Align:  pos=2905  :  M69  | bush | bush
+-  no string match pos=2983  :  clinton\/gore/O
++  no string match pos=2984  :  clinton/gore/O
+   no string match pos=2997  :  scandals/O
+   no string match pos=3006  :  of/O
+   no string match pos=3009  :  the/O
+   no string match pos=3013  :  past/O
+   no string match pos=3018  :  eight/O
+   no string match pos=3024  :  years/DATE
+   no string match pos=3030  :  will/O
+   no string match pos=3035  :  be/O
+   no string match pos=3038  :  a/O
+   no string match pos=3040  :  major/O
+@@ -52806,23 +52810,23 @@
+   no string match pos=3477  :  how/O
+   no string match pos=3481  :  on/O
+   no string match pos=3484  :  issues/O
+   no string match pos=3491  :  like/O
+   no string match pos=3496  :  social/O
+   no string match pos=3503  :  security/O
+   no string match pos=3512  :  and/O
+   no string match pos=3516  :  medicare/O
+   no string match pos=3524  :  ,/O
+   no string match pos=3526  :  the/O
+-Alignment!  Word:ACE  3529:3353  :   [clinton\/gore/O]  <->  [M21  | gore | gore                                          ]
++Alignment!  Word:ACE  3530:3353  :   [clinton/gore/O ]  <->  [M21  | gore | gore                                          ]
+ Ace Mention to Align:  pos=3358  :  M92  | administration | the clinton/gore administration
+-  no string match pos=3529  :  clinton\/gore/O
++  no string match pos=3530  :  clinton/gore/O
+ Alignment!  Word:ACE  3543:3358  :   [administration/O]  <->  [M92  | administration | the clinton/gore administration     ]
+ Ace Mention to Align:  pos=3392  :  M93  | they | they
+   no string match pos=3543  :  administration/O
+   no string match pos=3558  :  has/O
+   no string match pos=3562  :  failed/O
+   no string match pos=3569  :  to/O
+   no string match pos=3572  :  pr/O
+ Alignment!  Word:ACE  3583:3392  :   [they/O         ]  <->  [M93  | they | they                                          ]
+ Ace Mention to Align:  pos=3414  :  M94  | they | they
+ Alignment!  Word:ACE  3583:3414  :   [they/O         ]  <->  [M94  | they | they                                          ]
+@@ -55304,37 +55308,38 @@
+ TOKEN [AOL]  :   
+   Aligned to pos=101 : [AOL or Tim]
+ TOKEN [or]  :   
+   Aligned to pos=105 : [or Time Wa]
+ TOKEN [Time]  :   
+   Aligned to pos=108 : [Time Warne]
+ TOKEN [Warner]  :   
+   Aligned to pos=113 : [Warner.]
+ TOKEN [.]  :  
+   Aligned to pos=119 : [.]
+-SENTENCE WORDS     [Disney/ORGANIZATION, stumbled/O, badly/O, after/O, it/O, bought/O, Capital/ORGANIZATION, Cities\/ABC/O, in/O, 1996/DATE, ,/O, and/O, Time/ORGANIZATION, Warner/ORGANIZATION, stagnated/O, for/O, five/O, years/DATE, after/O, it/O, was/O, created/O, in/O, 1990/DATE, by/O, the/O, merger/O, of/O, Time/ORGANIZATION, and/O, Warner/ORGANIZATION, ./O]
++SENTENCE WORDS     [Disney/ORGANIZATION, stumbled/O, badly/O, after/O, it/O, bought/O, Capital/ORGANIZATION, Cities/ABC/O, in/O, 1996/DATE, ,/O, and/O, Time/ORGANIZATION, Warner/ORGANIZATION, stagnated/O, for/O, five/O, years/DATE, after/O, it/O, was/O, created/O, in/O, 1990/DATE, by/O, the/O, merger/O, of/O, Time/ORGANIZATION, and/O, Warner/ORGANIZATION, ./O]
+ TOKEN [Disney]  :   
+   Aligned to pos=1 : [Disney\nstu]
+ TOKEN [stumbled]  :  \n
+   Aligned to pos=8 : [stumbled b]
+ TOKEN [badly]  :   
+   Aligned to pos=17 : [badly afte]
+ TOKEN [after]  :   
+   Aligned to pos=23 : [after it b]
+ TOKEN [it]  :   
+   Aligned to pos=29 : [it bought ]
+ TOKEN [bought]  :   
+   Aligned to pos=32 : [bought Cap]
+ TOKEN [Capital]  :   
+   Aligned to pos=39 : [Capital Ci]
+-TOKEN [Cities\/ABC]  :   Cities/ABC in 1996, and Time\nWarner stagnated for five years after it was created in 1990 by the\nme  FAILED MATCH for token [Cities\/ABC]
+-TOKEN [in]  :   Cities/ABC 
++TOKEN [Cities/ABC]  :   
++  Aligned to pos=47 : [Cities/ABC]
++TOKEN [in]  :   
+   Aligned to pos=58 : [in 1996, a]
+ TOKEN [1996]  :   
+   Aligned to pos=61 : [1996, and ]
+ TOKEN [,]  :  
+   Aligned to pos=65 : [, and Time]
+ TOKEN [and]  :   
+   Aligned to pos=67 : [and Time\nW]
+ TOKEN [Time]  :   
+   Aligned to pos=71 : [Time\nWarne]
+ TOKEN [Warner]  :  \n
+@@ -56470,21 +56475,21 @@
+   no string match pos=1498  :  ./O
+ Alignment!  Word:ACE  1500:1500  :   [Disney/ORGANIZATION]  <->  [M36  | Disney | Disney                                      ]
+ Ace Mention to Align:  pos=1528  :  M37  | it | it
+   no string match pos=1507  :  stumbled/O
+   no string match pos=1516  :  badly/O
+   no string match pos=1522  :  after/O
+ Alignment!  Word:ACE  1528:1528  :   [it/O           ]  <->  [M37  | it | it                                              ]
+ Ace Mention to Align:  pos=1538  :  M38  | Capital Cities/ABC | Capital Cities/ABC
+ Alignment!  Word:ACE  1528:1538  :   [it/O           ]  <->  [M38  | Capital Cities/ABC | Capital Cities/ABC              ]
+ Ace Mention to Align:  pos=1570  :  M39  | Time Warner | Time Warner
+-  no string match pos=1545  :  Cities\/ABC/O
++  no string match pos=1546  :  Cities/ABC/O
+   no string match pos=1557  :  in/O
+   no string match pos=1560  :  1996/DATE
+   no string match pos=1564  :  ,/O
+   no string match pos=1566  :  and/O
+ Alignment!  Word:ACE  1570:1570  :   [Time/ORGANIZATION]  <->  [M39  | Time Warner | Time Warner                            ]
+ Ace Mention to Align:  pos=1613  :  M40  | it | it
+   no string match pos=1592  :  for/O
+   no string match pos=1596  :  five/O
+   no string match pos=1601  :  years/DATE
+   no string match pos=1607  :  after/O
+@@ -80299,43 +80304,44 @@
+ TOKEN [Slobodan]  :  \n
+   Aligned to pos=87 : [Slobodan M]
+ TOKEN [Milosevic]  :   
+   Aligned to pos=96 : [Milosevic ]
+ TOKEN [in]  :   
+   Aligned to pos=106 : [in October]
+ TOKEN [October]  :   
+   Aligned to pos=109 : [October.]
+ TOKEN [.]  :  
+   Aligned to pos=116 : [.]
+-SENTENCE WORDS     [Mr./O, Milosevic/O, 's/O, Socialist/O, Party/ORGANIZATION, and/O, its/O, allies/O, won/O, about/O, 1\/5th/O, of/O, the/O, vote/O, ./O]
++SENTENCE WORDS     [Mr./O, Milosevic/O, 's/O, Socialist/O, Party/ORGANIZATION, and/O, its/O, allies/O, won/O, about/O, 1/5th/O, of/O, the/O, vote/O, ./O]
+ TOKEN [Mr.]  :   
+   Aligned to pos=1 : [Mr. Milose]
+ TOKEN [Milosevic]  :   
+   Aligned to pos=5 : [Milosevic']
+ TOKEN ['s]  :  
+   Aligned to pos=14 : ['s Sociali]
+ TOKEN [Socialist]  :   
+   Aligned to pos=17 : [Socialist ]
+ TOKEN [Party]  :   
+   Aligned to pos=27 : [Party and\n]
+ TOKEN [and]  :   
+   Aligned to pos=33 : [and\nits al]
+ TOKEN [its]  :  \n
+   Aligned to pos=37 : [its allies]
+ TOKEN [allies]  :   
+   Aligned to pos=41 : [allies won]
+ TOKEN [won]  :   
+   Aligned to pos=48 : [won about ]
+ TOKEN [about]  :   
+   Aligned to pos=52 : [about 1/5t]
+-TOKEN [1\/5th]  :   1/5th of the vote.  FAILED MATCH for token [1\/5th]
+-TOKEN [of]  :   1/5th 
++TOKEN [1/5th]  :   
++  Aligned to pos=58 : [1/5th of t]
++TOKEN [of]  :   
+   Aligned to pos=64 : [of the vot]
+ TOKEN [the]  :   
+   Aligned to pos=67 : [the vote.]
+ TOKEN [vote]  :   
+   Aligned to pos=71 : [vote.]
+ TOKEN [.]  :  
+   Aligned to pos=75 : [.]
+ ***  ACE alignments ***
+ 
+ ace offset diff histogram: {64=9, 96=1, 126=2, 349=2, 224=1}

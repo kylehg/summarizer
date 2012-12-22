@@ -1,0 +1,1 @@
+PARSE	-157.8590545654297	(ROOT (S (S (NP (NNP John)) (VP (VBD knew) (SBAR (IN that) (S (NP (NNP Bob)) (VP (VBD was) (ADJP (JJ weird))))))) (, ,) (CC but) (S (NP (PRP he)) (ADVP (RB still)) (VP (VBD invited) (NP (PRP him)) (PP (TO to) (NP (DT the) (NN party))))) (. .)))

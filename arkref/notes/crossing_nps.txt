@@ -1,0 +1,35 @@
+== example ==
+~/coref/arkref % ./wrap.sh ace.FindAceMentions ace_rothdev/NYT20001002_1754_0290|less
+
+HMMM, ACE extent doesn't match lowest subtree:
+ size  7 | the Dauphin Island Sea Lab in Alabama
+ size 10 | (NP (NP (DT a) (NN researcher)) (PP (IN at) (NP (DT the) (NNP Dauphin) (NNP Island) (NNP Sea) (NNP Lab))) (PP (IN in) (NP (NNP Alabama))))
+Subtree head: researcher
+UHOH, it seems to cross between non-head-equivalent subtrees (e.g. PP attachment error can cause this)
+
+Hard to imagine what the tree surgery algorithm is.
+In this case, really have to re-attach the second PP.
+Maybe, simply flatten together all pre-terminals under a new NP, then attach said NP under ... something ...
+ideally, constrain the parser such that it has this NP.
+  e.g. top-K search for a parse having all required NPs!
+  but, the search might fail so still have this problem.
+
+
+== another example ==
+~/coref/arkref % ./wrap.sh ace.FindAceMentions ace_rothdev/CNN20001203_0900_0606|less
+
+SENTENCE many soy products can now be found on your local grocer's shelf.
+EXTENT <your local grocer>
+leftW,rightW = 8,10
+ACE extent leaves [size  3]:  your local grocer
+HMMM, ACE extent doesn't match lowest subtree:
+ size  3 | your local grocer
+ size  4 | (NP (NP (PRP$ your)) (JJ local) (NN grocer) (POS 's))
+Subtree head: 's
+UHOH, it seems to cross between non-head-equivalent subtrees (e.g. PP attachment error can cause this)
+
+The problem is slightly compounded by the NP-wrapping of PRP$ that we do
+(the parser doesn't have that at first)
+But this is a small issue.
+
+Note the tree surgery is straightforward here, since everything is already flattened.

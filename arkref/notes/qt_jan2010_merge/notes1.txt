@@ -1,0 +1,29 @@
+r1289
+src/arkref/analysis/Resolve.java
+skip it
+
+
+r1291 - disable organization types
+skip it
+
+src/arkref/analysis/Types.java
+
+
+r1292 - looks like upgrades to noun type recognition - title recognition
+looks good to take
+
+src/arkref/analysis/NounTypes.java
+src/arkref/analysis/Types.java
+
+
+r1293 - looks like more upgrades to noun type recognition (titles)
+src/arkref/analysis/Types.java
+
+
+r1297 - removes fig.basic
+
+
+r1301 - subtle change to parse error recognition
+
+
+

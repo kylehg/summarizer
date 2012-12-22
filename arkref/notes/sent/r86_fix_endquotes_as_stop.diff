@@ -1,0 +1,59 @@
+--- r82ish.log	2009-11-22 17:27:44.000000000 -0500
++++ /tmp/zshh4FE0R	2009-11-22 18:59:17.000000000 -0500
+@@ -204,8 +204,7 @@
+ DOCUMENT	ace_rothdev/APW20001002_0615_0146.txt
+ CAPRATIO	1.512821
+ SENTENCE	JAKARTA , Indonesia ( AP ) _ The youngest son of ex - dictator Suharto disobeyed a summons to surrender himself to prosecutors Monday and be imprisoned for corruption .
+-SENTENCE	Hutomo `` Tommy ''
+-SENTENCE	Mandala Putra , 37 , was sentenced to 18 months in prison on Sept . 22 by the Supreme Court , which overturned an earlier acquittal by a lower court .
++SENTENCE	Hutomo `` Tommy '' Mandala Putra , 37 , was sentenced to 18 months in prison on Sept . 22 by the Supreme Court , which overturned an earlier acquittal by a lower court .
+ SENTENCE	It found him guilty of enriching himself through a property deal with the state ' s main food supply agency .
+ SENTENCE	Prosecutors said the 1997 deal , made when his father was still in power , had cost the Indonesian state $ 10.8 million .
+ SENTENCE	Tommy , a multimillionaire with a playboy image and love of fast cars , is the first member of Suharto ' s family to be convicted of graft .
+@@ -553,8 +552,7 @@
+ DOCUMENT	ace_rothdev/APW20001219_1316_0416.txt
+ CAPRATIO	2.038961
+ SENTENCE	DENVER ( AP ) _ The Denver Broncos and the NFL want a commercial real estate agent to take down a sign advertising a site for a potential sports bar because it features the team ' s name .
+-SENTENCE	John `` Jack ''
+-SENTENCE	Hanlon of Coldwell Banker American Spectrum is listing an acre of land about a mile from the Broncos ' training camp in Dove Valley .
++SENTENCE	John `` Jack '' Hanlon of Coldwell Banker American Spectrum is listing an acre of land about a mile from the Broncos ' training camp in Dove Valley .
+ SENTENCE	Hanlon , a longtime Broncos fan , thinks it is the perfect place for a sports bar and has put up a blue - and - orange sign reading , `` Wanted Broncos Sports Bar On This Site . ''
+ SENTENCE	He said that 47,000 cars drive by the site daily and `` because the players have to drive by it every day it could become a hangout for them . ''
+ SENTENCE	Hanlon said he never has implied that the future sports bar would be called the Broncos Bar , but his company has turned over the matter to its legal department .
+@@ -720,23 +718,19 @@
+ SENTENCE	rounding out the week , november personal income and outlays figures and november durable goods .
+ SENTENCE	personal income and spending are both expected to rise .
+ SENTENCE	and sales of durable goods should climb slightly for the month , as well .
+-SENTENCE	to stay " ahead of the curve "
+-SENTENCE	all week long , watch " the moneyline news hour "
+-SENTENCE	with willow bay and stewart varney , week nights at on cnn .
++SENTENCE	to stay " ahead of the curve " all week long , watch " the moneyline news hour " with willow bay and stewart varney , week nights at on cnn .
+ SENTENCE	kitty pilgrim , " cnn financial news , " new york .
+ 
+ DOCUMENT	ace_rothdev/CNN20001219_1400_1513.txt
+ CAPRATIO	0.002494
+-SENTENCE	the " jingle cats "
+-SENTENCE	are putting a new twist on the term " meow mix . "
++SENTENCE	the " jingle cats " are putting a new twist on the term " meow mix . "
+ SENTENCE	denise dillon introduces us to a group of singing felines with several under their collars .
+ SENTENCE	7777 if nine caroling cats crooning christmas classics doesn ' t put you in the holiday mood , maybe nothing will .
+ SENTENCE	yes , it ' s that time of year .
+ SENTENCE	the jingle cats are back , and can be found just about anywhere .
+ SENTENCE	they have cassettes and and their very own video , which is also out on dvd . the man behind the music , creator mike spalla , says he owes it all to his cat , cheesepuff , and her finely tuned vocal cords .
+ SENTENCE	i was hired to do some christmas music , and it was just " jingle bells , " and i brought my cat with me to the studio , and i was working on the song and the cat jumped up into the record booth and started meowing along , meowing to me .
+-SENTENCE	7777 cheesepuff and friends first clawed their way onto the music charts in 1993 with the release of their " meowy christmas "
+-SENTENCE	cd , featuring 20 classic christmas hits .
++SENTENCE	7777 cheesepuff and friends first clawed their way onto the music charts in 1993 with the release of their " meowy christmas " cd , featuring 20 classic christmas hits .
+ SENTENCE	it was such a success , the following year , the feline group released another holiday song collection , " here comes santa claws . "
+ SENTENCE	spalla says they have a following of some very unique fans .
+ SENTENCE	there ' s a certain kind of person that ' s in tune with a cat .
+@@ -874,8 +868,7 @@
+ SENTENCE	nbc ' s david gregory with the vice president in pittsburgh tonight .
+ SENTENCE	reporter : tom , making it abundantly clear that the clinton / gore scandals of the past eight years will be a major theme in the closing days of this campaign , bush attacks the vice president for being a failed leader and promises if he ' s elected americans will once again be able to respect their government .
+ SENTENCE	bush campaigns today in this tough battleground state alongside the popular retired general colin powell and again hints strongly powell will be a member of his cabinet if elected .
+-SENTENCE	today ' s address focuses on " responsible leadership "
+-SENTENCE	and how on issues like social security and medicare , the clinton / gore administration has failed to pr they are going out as they came in -- their guide , the nightly polls .
++SENTENCE	today ' s address focuses on " responsible leadership " and how on issues like social security and medicare , the clinton / gore administration has failed to pr they are going out as they came in -- their guide , the nightly polls .
+ SENTENCE	their goal , the morning headlines .
+ SENTENCE	their legacy , the fruitless search for a legacy .
+ SENTENCE	reporter : with the race so tight , advisers are hunkered down trying to for the final push .

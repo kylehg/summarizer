@@ -1,0 +1,377 @@
+
+***  Input data/10K.ner  ***
+*** Entity Report ***
+
+S1   For product sales for which adequate product warranty information exists , the Company records revenue when a firm sales agreement is in place , delivery has occurred , sales price is fixed or determinable , and collectibility is reasonably assured .
+	singleton             M1  | S1  |     Pl      | O            | (NP (NP (NN product) (NNS sales)) (SBAR (WHPP (IN for) (WHNP (WDT which))) (S (NP (JJ adequate) (NN product) (NN warranty) (NN information)) (VP (VBZ exists)))))
+	singleton             M2  | S1  |     Sg      | O            | (NP (JJ adequate) (NN product) (NN warranty) (NN information))
+	singleton             M3  | S1  |     Sg      | O            | (NP (DT the) (NN Company))
+	entity_4_12           M4  | S1  |     Sg      | O            | (NP (NP (NN revenue)) (SBAR (WHADVP (WRB when)) (S (NP (DT a) (NN firm) (NNS sales) (NN agreement)) (VP (VBZ is) (PP (IN in) (NP (NN place)))))))
+	singleton             M5  | S1  |     Sg      | O            | (NP (DT a) (NN firm) (NNS sales) (NN agreement))
+	singleton             M6  | S1  |     Sg      | O            | (NP (NN place))
+	singleton             M7  | S1  |     Sg      | O            | (NP (NN delivery))
+	singleton             M8  | S1  |     Sg      | O            | (NP (NNS sales) (NN price))
+	singleton             M9  | S1  |     Sg      | O            | (NP (NN collectibility))
+S2   If customer acceptance of products is not assured , revenue is recorded only upon formal customer acceptance .
+	entity_10_13_17_19_22  M10 | S2  |     Sg      | O            | (NP (NP (NN customer) (NN acceptance)) (PP (IN of) (NP (NNS products))))
+	singleton             M11 | S2  |     Pl      | O            | (NP (NNS products))
+	entity_4_12           M12 | S2  |     Sg      | O            | (NP (NN revenue))
+	entity_10_13_17_19_22  M13 | S2  |     Sg      | O            | (NP (JJ formal) (NN customer) (NN acceptance))
+S3   Customer acceptance provisions included in the Company 's product sales agreements include written acceptance from the customer , acceptance upon servicing and installation of the equipment , and acceptance after a period of time .
+	singleton             M14 | S3  |     Pl      | O            | (NP (NP (NN Customer) (NN acceptance) (NNS provisions)) (VP (VBN included) (PP (IN in) (NP (NP (DT the) (NN Company) (POS 's)) (NN product) (NNS sales) (NNS agreements)))))
+	singleton             M15 | S3  |     Pl      | O            | (NP (NP (DT the) (NN Company) (POS 's)) (NN product) (NNS sales) (NNS agreements))
+	singleton             M16 | S3  |             | O            | (NP (DT the) (NN Company) (POS 's))
+	entity_10_13_17_19_22  M17 | S3  |     Sg      | O            | (NP (NP (NP (VBN written) (NN acceptance)) (PP (IN from) (NP (DT the) (NN customer)))) (, ,) (NP (NP (NN acceptance)) (PP (IN upon) (NP (NN servicing) (CC and) (NN installation))) (PP (IN of) (NP (DT the) (NN equipment)))) (, ,) (CC and) (NP (NP (NN acceptance)) (PP (IN after) (NP (NP (DT a) (NN period)) (PP (IN of) (NP (NN time)))))))
+	singleton             M18 | S3  |     Sg  Per | O            | (NP (DT the) (NN customer))
+	entity_10_13_17_19_22  M19 | S3  |     Sg      | O            | (NP (NP (NN acceptance)) (PP (IN upon) (NP (NN servicing) (CC and) (NN installation))) (PP (IN of) (NP (DT the) (NN equipment))))
+	singleton             M20 | S3  |     Sg      | O            | (NP (NN servicing) (CC and) (NN installation))
+	singleton             M21 | S3  |     Sg      | O            | (NP (DT the) (NN equipment))
+	entity_10_13_17_19_22  M22 | S3  |     Sg      | O            | (NP (NP (NN acceptance)) (PP (IN after) (NP (NP (DT a) (NN period)) (PP (IN of) (NP (NN time))))))
+	singleton             M23 | S3  |     Sg      | O            | (NP (NP (DT a) (NN period)) (PP (IN of) (NP (NN time))))
+	singleton             M24 | S3  |     Sg      | O            | (NP (NN time))
+
+***  Input data/IWithinI.ner  ***
+*** Entity Report ***
+
+S1   Walmart says Gitano , its top-selling brand , is underselling .
+	entity_1_4            M1  | S1  |     Sg      | O            | (NP (NNP Walmart))
+	entity_2_3            M2  | S1  |     Sg      | O            | (NP (NP (NNP Gitano)) (, ,) (NP (NP (PRP$ its)) (JJ top-selling) (NN brand)) (, ,))
+	entity_2_3            M3  | S1  |     Sg      | O            | (NP (NP (PRP$ its)) (JJ top-selling) (NN brand))
+	entity_1_4            M4  | S1  |     Sg NPer | O            | (NP (PRP$ its))
+
+***  Input data/article.ner  ***
+*** Entity Report ***
+
+S1   The plan , for the 25 top earners at seven companies that received exceptional help , will on average cut total compensation this year by about 50 percent . The companies are Citigroup , Bank of America , American International Group , General Motors , Chrysler and the financing arms of the two automakers .
+	entity_1_30_35        M1  | S1  |     Sg      | O            | (NP (NP (DT The) (NN plan)) (, ,) (PP (IN for) (NP (NP (DT the) (CD 25) (JJ top) (NNS earners)) (PP (IN at) (NP (NP (CD seven) (NNS companies)) (SBAR (WHNP (WDT that)) (S (VP (VBD received) (NP (JJ exceptional) (NN help))))))))) (, ,))
+	singleton             M2  | S1  |     Pl  Per | O            | (NP (NP (DT the) (CD 25) (JJ top) (NNS earners)) (PP (IN at) (NP (NP (CD seven) (NNS companies)) (SBAR (WHNP (WDT that)) (S (VP (VBD received) (NP (JJ exceptional) (NN help))))))))
+	entity_3_9_10_26_33   M3  | S1  |             | O            | (NP (NP (CD seven) (NNS companies)) (SBAR (WHNP (WDT that)) (S (VP (VBD received) (NP (JJ exceptional) (NN help))))))
+	singleton             M4  | S1  |     Sg      | O            | (NP (JJ exceptional) (NN help))
+	singleton             M5  | S1  |     Sg      | O            | (NP (NN average))
+	entity_6_31           M6  | S1  |     Sg      | O            | (NP (NP (NP (JJ total) (NN compensation)) (NP (DT this) (NN year)) (PP (IN by) (NP (QP (RB about) (CD 50)) (NN percent))) (. .)) (SBAR (S (NP (DT The) (NNS companies)) (VP (VBP are) (NP (NP (NNP Citigroup)) (, ,) (NP (NP (NNP Bank)) (PP (IN of) (NP (NNP America)))) (, ,) (NP (NNP American) (NNP International) (NNP Group)) (, ,) (NP (NNP General) (NNPS Motors)) (, ,) (NP (NNP Chrysler)) (CC and) (NP (NP (DT the) (VBG financing) (NNS arms)) (PP (IN of) (NP (DT the) (CD two) (NNS automakers)))))))))
+	singleton             M7  | S1  |     Sg NPer | DATE         | (NP (DT this) (NN year))
+	singleton             M8  | S1  |     Sg NPer | PERCENT      | (NP (QP (RB about) (CD 50)) (NN percent))
+	entity_3_9_10_26_33   M9  | S1  |             | O            | (NP (DT The) (NNS companies))
+	entity_3_9_10_26_33   M10 | S1  |     Sg      | O            | (NP (NP (NNP Citigroup)) (, ,) (NP (NP (NNP Bank)) (PP (IN of) (NP (NNP America)))) (, ,) (NP (NNP American) (NNP International) (NNP Group)) (, ,) (NP (NNP General) (NNPS Motors)) (, ,) (NP (NNP Chrysler)) (CC and) (NP (NP (DT the) (VBG financing) (NNS arms)) (PP (IN of) (NP (DT the) (CD two) (NNS automakers)))))
+	singleton             M11 | S1  |        NPer | ORGANIZATION | (NP (NP (NNP Bank)) (PP (IN of) (NP (NNP America))))
+	singleton             M12 | S1  |     Sg NPer | LOCATION     | (NP (NNP America))
+	singleton             M13 | S1  |        NPer | ORGANIZATION | (NP (NNP American) (NNP International) (NNP Group))
+	singleton             M14 | S1  |        NPer | ORGANIZATION | (NP (NNP General) (NNPS Motors))
+	singleton             M15 | S1  |     Sg      | O            | (NP (NNP Chrysler))
+	singleton             M16 | S1  |     Pl      | O            | (NP (NP (DT the) (VBG financing) (NNS arms)) (PP (IN of) (NP (DT the) (CD two) (NNS automakers))))
+	singleton             M17 | S1  |             | O            | (NP (DT the) (CD two) (NNS automakers))
+S2   Some executives , like the top traders at A.I.G. , will face tight limits on their pay . In addition , the top-paid employees at all the affected companies will face new limits on their perks .
+	entity_18_23          M18 | S2  |     Pl  Per | O            | (NP (DT Some) (NNS executives))
+	singleton             M19 | S2  |     Pl  Per | O            | (NP (NP (DT the) (JJ top) (NNS traders)) (PP (IN at) (NP (NNP A.I.G.))))
+	singleton             M20 | S2  |     Sg      | O            | (NP (NNP A.I.G.))
+	singleton             M21 | S2  |     Pl      | O            | (NP (NP (NP (JJ tight) (NNS limits)) (PP (IN on) (NP (NP (PRP$ their)) (NN pay))) (. .)) (SBAR (S (PP (IN In) (NP (NN addition))) (, ,) (NP (NP (DT the) (JJ top-paid) (NNS employees)) (PP (IN at) (NP (PDT all) (DT the) (JJ affected) (NNS companies)))) (VP (MD will) (VP (VB face) (NP (JJ new) (NNS limits)) (PP (IN on) (NP (NP (PRP$ their)) (NNS perks))))))))
+	singleton             M22 | S2  |     Sg      | O            | (NP (NP (PRP$ their)) (NN pay))
+	entity_18_23          M23 | S2  |     Pl MaybePer | O            | (NP (PRP$ their))
+	singleton             M24 | S2  |     Sg      | O            | (NP (NN addition))
+	singleton             M25 | S2  |     Pl  Per | O            | (NP (NP (DT the) (JJ top-paid) (NNS employees)) (PP (IN at) (NP (PDT all) (DT the) (JJ affected) (NNS companies))))
+	entity_3_9_10_26_33   M26 | S2  |             | O            | (NP (PDT all) (DT the) (JJ affected) (NNS companies))
+	entity_27_29          M27 | S2  |     Pl      | O            | (NP (JJ new) (NNS limits))
+	singleton             M28 | S2  |     Pl      | O            | (NP (NP (PRP$ their)) (NNS perks))
+	entity_27_29          M29 | S2  |     Pl MaybePer | O            | (NP (PRP$ their))
+S4   But while the plan would pare compensation substantially from what the highest-paid people at the companies might have received under normal circumstances , it would still permit multimillion-dollar pay packages .
+	entity_1_30_35        M30 | S4  |     Sg      | O            | (NP (DT the) (NN plan))
+	entity_6_31           M31 | S4  |     Sg      | O            | (NP (NN compensation))
+	singleton             M32 | S4  |             | O            | (NP (NP (DT the) (JJ highest-paid) (NNS people)) (PP (IN at) (NP (DT the) (NNS companies))))
+	entity_3_9_10_26_33   M33 | S4  |             | O            | (NP (DT the) (NNS companies))
+	singleton             M34 | S4  |     Pl      | O            | (NP (JJ normal) (NNS circumstances))
+	entity_1_30_35        M35 | S4  |     Sg NPer | O            | (NP (PRP it))
+	singleton             M36 | S4  |             | O            | (NP (JJ multimillion-dollar) (NN pay) (NNS packages))
+
+***  Input data/calverts.ner  ***
+*** Entity Report ***
+
+S1   While establishing a refuge for Catholics , who faced increasing persecution in Anglican England , the Calverts were also interested in creating profitable estates .
+	singleton             M1  | S1  |     Sg      | O            | (NP (NP (DT a) (NN refuge)) (PP (IN for) (NP (NP (NNPS Catholics)) (, ,) (SBAR (WHNP (WP who)) (S (VP (VBD faced) (NP (NP (VBG increasing) (NN persecution)) (PP (IN in) (NP (NNP Anglican) (NNP England))))))))))
+	singleton             M2  | S1  |     Pl      | O            | (NP (NP (NNPS Catholics)) (, ,) (SBAR (WHNP (WP who)) (S (VP (VBD faced) (NP (NP (VBG increasing) (NN persecution)) (PP (IN in) (NP (NNP Anglican) (NNP England))))))))
+	singleton             M3  | S1  |     Sg      | O            | (NP (NP (VBG increasing) (NN persecution)) (PP (IN in) (NP (NNP Anglican) (NNP England))))
+	singleton             M4  | S1  |     Sg NPer | LOCATION     | (NP (NNP Anglican) (NNP England))
+	singleton             M5  | S1  |     Pl      | O            | (NP (DT the) (NNPS Calverts))
+	entity_6_18_33        M6  | S1  |     Pl      | O            | (NP (JJ profitable) (NNS estates))
+S2   To this end , and to avoid trouble with the British government , they also encouraged Protestant immigration .
+	singleton             M7  | S2  |     Sg      | O            | (NP (DT this) (NN end))
+	singleton             M8  | S2  |     Sg      | O            | (NP (NP (VB avoid) (NN trouble)) (PP (IN with) (NP (DT the) (JJ British) (NN government))))
+	entity_9_10           M9  | S2  |             | O            | (NP (DT the) (JJ British) (NN government))
+	entity_9_10           M10 | S2  |     Pl MaybePer | O            | (NP (PRP they))
+	singleton             M11 | S2  |     Sg      | O            | (NP (JJ Protestant) (NN immigration))
+S3   Maryland €™s royal charter had a mixture of feudal and modern elements .
+	singleton             M12 | S3  |     Sg      | O            | (NP (NNP Maryland) (NN €™s) (NN royal) (NN charter))
+	singleton             M13 | S3  |     Sg      | O            | (NP (NP (DT a) (NN mixture)) (PP (IN of) (NP (JJ feudal) (CC and) (JJ modern) (NNS elements))))
+	singleton             M14 | S3  |     Pl      | O            | (NP (JJ feudal) (CC and) (JJ modern) (NNS elements))
+S4   On the one hand the Calvert family had the power to create manorial estates .
+	singleton             M15 | S4  |     Sg      | O            | (NP (DT the) (CD one) (NN hand))
+	singleton             M16 | S4  |             | O            | (NP (DT the) (NNP Calvert) (NN family))
+	singleton             M17 | S4  |     Sg      | O            | (NP (DT the) (NN power) (S (VP (TO to) (VP (VB create) (NP (JJ manorial) (NNS estates))))))
+	entity_6_18_33        M18 | S4  |     Pl      | O            | (NP (JJ manorial) (NNS estates))
+S5   On the other , they could only make laws with the consent of freemen -LRB- property holders -RRB- .
+	entity_19_20_25_29_30_38  M19 | S5  |             | O            | (NP (DT the) (JJ other))
+	entity_19_20_25_29_30_38  M20 | S5  |     Pl MaybePer | O            | (NP (PRP they))
+	singleton             M21 | S5  |             | O            | (NP (NNS laws))
+	singleton             M22 | S5  |     Sg      | O            | (NP (NP (DT the) (NN consent)) (PP (IN of) (NP (NP (NN freemen)) (PRN (-LRB- -LRB-) (NP (NN property) (NNS holders)) (-RRB- -RRB-)))))
+	singleton             M23 | S5  |     Sg      | O            | (NP (NP (NN freemen)) (PRN (-LRB- -LRB-) (NP (NN property) (NNS holders)) (-RRB- -RRB-)))
+	singleton             M24 | S5  |     Pl      | O            | (NP (NN property) (NNS holders))
+S6   They found that in order to attract settlers €” and make a profit from their holdings €” they had to offer people farms , not just tenancy on manorial estates .
+	entity_19_20_25_29_30_38  M25 | S6  |     Pl MaybePer | O            | (NP (PRP They))
+	entity_26_28          M26 | S6  |     Sg      | O            | (NP (JJ settlers) (NN €”))
+	singleton             M27 | S6  |     Sg      | O            | (NP (DT a) (NN profit))
+	entity_26_28          M28 | S6  |     Sg      | O            | (NP (NP (PRP$ their)) (NNS holdings) (NN €”))
+	entity_19_20_25_29_30_38  M29 | S6  |     Pl MaybePer | O            | (NP (PRP$ their))
+	entity_19_20_25_29_30_38  M30 | S6  |     Pl MaybePer | O            | (NP (PRP they))
+	entity_31_35          M31 | S6  |     Pl      | O            | (NP (NP (NNS people) (NNS farms)) (, ,) (RB not) (RB just) (NP (NP (NN tenancy)) (PP (IN on) (NP (JJ manorial) (NNS estates)))))
+	singleton             M32 | S6  |     Sg      | O            | (NP (NP (NN tenancy)) (PP (IN on) (NP (JJ manorial) (NNS estates))))
+	entity_6_18_33        M33 | S6  |     Pl      | O            | (NP (JJ manorial) (NNS estates))
+S7   The number of independent farms grew in consequence .
+	singleton             M34 | S7  |     Sg      | O            | (NP (NP (DT The) (NN number)) (PP (IN of) (NP (JJ independent) (NNS farms))))
+	entity_31_35          M35 | S7  |     Pl      | O            | (NP (JJ independent) (NNS farms))
+	singleton             M36 | S7  |     Sg      | O            | (NP (NN consequence))
+S8   Their owners demanded a voice in the affairs of the colony .
+	singleton             M37 | S8  |     Pl  Per | O            | (NP (NP (PRP$ Their)) (NNS owners))
+	entity_19_20_25_29_30_38  M38 | S8  |     Pl MaybePer | O            | (NP (PRP$ Their))
+	singleton             M39 | S8  |     Sg      | O            | (NP (DT a) (NN voice))
+	singleton             M40 | S8  |     Pl      | O            | (NP (NP (DT the) (NNS affairs)) (PP (IN of) (NP (DT the) (NN colony))))
+	singleton             M41 | S8  |             | O            | (NP (DT the) (NN colony))
+S9   Maryland €™s first legislature met in 1635 .
+	singleton             M42 | S9  |             | O            | (NP (NNP Maryland) (NNP €™s) (JJ first) (NN legislature))
+	singleton             M43 | S9  |             | O            | (NP (CD 1635))
+
+***  Input data/conjunctionsTest.ner  ***
+*** Entity Report ***
+
+S1   He and Fred went to the store .
+	singleton             M1  | S1  | Mal Sg  Per | O            | (NP (PRP He) (CC and) (NNP Fred))
+	singleton             M2  | S1  |     Sg      | O            | (NP (DT the) (NN store))
+
+***  Input data/conjunctionsTest2.ner  ***
+*** Entity Report ***
+
+S1   He and Fred went to the store .
+	entity_1_3            M1  | S1  | Mal Sg  Per | O            | (NP (PRP He) (CC and) (NNP Fred))
+	singleton             M2  | S1  |     Sg      | O            | (NP (DT the) (NN store))
+S2   He bought some ice cream .
+	entity_1_3            M3  | S2  | Mal Sg  Per | O            | (NP (PRP He))
+	singleton             M4  | S2  |             | O            | (NP (DT some) (NN ice) (NN cream))
+
+***  Input data/defaultMale1.ner  ***
+*** Entity Report ***
+
+S1   Sally went to the banker .
+	singleton             M1  | S1  | Fem Sg      | O            | (NP (NNP Sally))
+	entity_2_3            M2  | S1  |     Sg  Per | O            | (NP (DT the) (NN banker))
+S2   He gave her money .
+	entity_2_3            M3  | S2  | Mal Sg  Per | O            | (NP (PRP He))
+	singleton             M4  | S2  |     Sg      | O            | (NP (NP (PRP$ her)) (NN money))
+	singleton             M5  | S2  | Fem Sg  Per | O            | (NP (PRP$ her))
+
+***  Input data/defaultMale2.ner  ***
+*** Entity Report ***
+
+S1   Bob went to the banker .
+	entity_1_3            M1  | S1  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
+	singleton             M2  | S1  |     Sg  Per | O            | (NP (DT the) (NN banker))
+S2   He wanted to do a transaction .
+	entity_1_3            M3  | S2  | Mal Sg  Per | O            | (NP (PRP He))
+	singleton             M4  | S2  |     Sg      | O            | (NP (DT a) (NN transaction))
+
+***  Input data/defaultMale3.ner  ***
+*** Entity Report ***
+
+S1   The banker met Bob .
+	entity_1_3_5          M1  | S1  |     Sg  Per | O            | (NP (DT The) (NN banker))
+	singleton             M2  | S1  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
+S2   He was at his booth .
+	entity_1_3_5          M3  | S2  | Mal Sg  Per | O            | (NP (PRP He))
+	singleton             M4  | S2  |     Sg      | O            | (NP (NP (PRP$ his)) (NN booth))
+	entity_1_3_5          M5  | S2  | Mal Sg  Per | O            | (NP (PRP$ his))
+
+***  Input data/firstPerson1.ner  ***
+*** Entity Report ***
+
+S1   I am the prince of thieves .
+	entity_1_4_6          M1  | S1  |     Sg  Per | O            | (NP (PRP I))
+	singleton             M2  | S1  |     Sg  Per | O            | (NP (NP (DT the) (NN prince)) (PP (IN of) (NP (NNS thieves))))
+	singleton             M3  | S1  |     Pl      | O            | (NP (NNS thieves))
+S2   I have my cake and am eating it too .
+	entity_1_4_6          M4  | S2  |     Sg  Per | O            | (NP (PRP I))
+	entity_5_7            M5  | S2  |     Sg      | O            | (NP (NP (PRP$ my)) (NN cake))
+	entity_1_4_6          M6  | S2  |     Sg  Per | O            | (NP (PRP$ my))
+	entity_5_7            M7  | S2  |     Sg NPer | O            | (NP (PRP it))
+
+***  Input data/lcross.ner  ***
+*** Entity Report ***
+
+S1   The Lunar CRater Observation and Sensing Satellite -LRB- LCROSS -RRB- was a robotic spacecraft operated by NASA .
+	entity_1_3_5          M1  | S1  |        NPer | ORGANIZATION | (NP (NP (DT The) (NNP Lunar) (NNP CRater) (NNP Observation) (CC and) (NNP Sensing) (NNP Satellite)) (PRN (-LRB- -LRB-) (NP (NNP LCROSS)) (-RRB- -RRB-)))
+	entity_2_14           M2  | S1  |     Sg      | O            | (NP (NNP LCROSS))
+	entity_1_3_5          M3  | S1  |     Sg      | O            | (NP (NP (DT a) (JJ robotic) (NN spacecraft)) (VP (VBN operated) (PP (IN by) (NP (NNP NASA)))))
+	singleton             M4  | S1  |        NPer | ORGANIZATION | (NP (NNP NASA))
+S2   It was launched together with the Lunar Reconnaissance Orbiter -LRB- LRO -RRB- on June 18 , 2009 , as part of the shared Lunar Precursor Robotic Program , the first American mission to the Moon in over ten years .
+	entity_1_3_5          M5  | S2  |     Sg NPer | O            | (NP (PRP It))
+	singleton             M6  | S2  | Fem Sg      | O            | (NP (NP (NP (DT the) (NNP Lunar) (NNP Reconnaissance) (NNP Orbiter)) (PRN (-LRB- -LRB-) (NP (NNP LRO)) (-RRB- -RRB-))) (PP (IN on) (NP (NNP June) (CD 18) (, ,) (CD 2009) (, ,))))
+	singleton             M7  | S2  |     Sg      | O            | (NP (NNP LRO))
+	singleton             M8  | S2  |     Sg NPer | DATE         | (NP (NNP June) (CD 18) (, ,) (CD 2009) (, ,))
+	singleton             M9  | S2  |     Sg      | O            | (NP (NP (NN part)) (PP (IN of) (NP (DT the) (JJ shared) (NNP Lunar) (NNP Precursor) (NNP Robotic) (NN Program))))
+	singleton             M10 | S2  |     Sg      | O            | (NP (DT the) (JJ shared) (NNP Lunar) (NNP Precursor) (NNP Robotic) (NN Program))
+	singleton             M11 | S2  |             | O            | (NP (NP (DT the) (JJ first) (JJ American) (NN mission)) (PP (TO to) (NP (DT the) (NNP Moon))))
+	entity_12_23          M12 | S2  |     Sg NPer | LOCATION     | (NP (DT the) (NNP Moon))
+	singleton             M13 | S2  |     Pl NPer | DATE         | (NP (NN ten) (NNS years))
+S3   LCROSS was designed to watch as the launch vehicle 's spent Centaur upper stage , with a nominal impact mass of 2,305 kg -LRB- 5,081 lb -RRB- , struck the Cabeus crater -LRB- 3 -RRB- near the south pole of the Moon .
+	entity_2_14           M14 | S3  |     Pl      | O            | (NP (NNS LCROSS))
+	singleton             M15 | S3  |     Sg      | O            | (NP (NP (DT the) (NN launch) (NN vehicle) (POS 's)) (JJ spent) (NNP Centaur) (JJ upper) (NN stage))
+	singleton             M16 | S3  |             | O            | (NP (DT the) (NN launch) (NN vehicle) (POS 's))
+	singleton             M17 | S3  |     Sg      | O            | (NP (NP (DT a) (JJ nominal) (NN impact) (NN mass)) (PP (IN of) (NP (NP (CD 2,305) (NN kg) (PRN (-LRB- -LRB-) (NP (CD 5,081) (NN lb)) (-RRB- -RRB-))) (, ,) (VP (VBN struck) (NP (NP (NP (DT the) (NNP Cabeus) (NN crater)) (PRN (-LRB- -LRB-) (NP (CD 3)) (-RRB- -RRB-))) (PP (IN near) (NP (NP (DT the) (JJ south) (NN pole)) (PP (IN of) (NP (DT the) (NNP Moon))))))))))
+	singleton             M18 | S3  |     Sg      | O            | (NP (NP (CD 2,305) (NN kg) (PRN (-LRB- -LRB-) (NP (CD 5,081) (NN lb)) (-RRB- -RRB-))) (, ,) (VP (VBN struck) (NP (NP (NP (DT the) (NNP Cabeus) (NN crater)) (PRN (-LRB- -LRB-) (NP (CD 3)) (-RRB- -RRB-))) (PP (IN near) (NP (NP (DT the) (JJ south) (NN pole)) (PP (IN of) (NP (DT the) (NNP Moon))))))))
+	singleton             M19 | S3  |     Sg      | O            | (NP (CD 5,081) (NN lb))
+	singleton             M20 | S3  |     Sg      | O            | (NP (NP (NP (DT the) (NNP Cabeus) (NN crater)) (PRN (-LRB- -LRB-) (NP (CD 3)) (-RRB- -RRB-))) (PP (IN near) (NP (NP (DT the) (JJ south) (NN pole)) (PP (IN of) (NP (DT the) (NNP Moon))))))
+	singleton             M21 | S3  |             | O            | (NP (CD 3))
+	singleton             M22 | S3  |     Sg      | O            | (NP (NP (DT the) (JJ south) (NN pole)) (PP (IN of) (NP (DT the) (NNP Moon))))
+	entity_12_23          M23 | S3  |     Sg NPer | LOCATION     | (NP (DT the) (NNP Moon))
+
+***  Input data/nativeAmericans.ner  ***
+*** Entity Report ***
+
+S1   The earliest known settlers followed herds of large game to the region during the last glacial period .
+	entity_1_6            M1  | S1  |     Pl  Per | O            | (NP (DT The) (JJS earliest) (JJ known) (NNS settlers))
+	singleton             M2  | S1  |             | O            | (NP (NP (NNS herds)) (PP (IN of) (NP (JJ large) (NN game))))
+	singleton             M3  | S1  |     Sg      | O            | (NP (JJ large) (NN game))
+	singleton             M4  | S1  |     Sg      | O            | (NP (DT the) (NN region))
+	singleton             M5  | S1  |     Sg      | O            | (NP (DT the) (JJ last) (JJ glacial) (NN period))
+S2   They preceded the Anishinaabe , the Dakota , and other Native American inhabitants .
+	entity_1_6            M6  | S2  |     Pl MaybePer | O            | (NP (PRP They))
+	singleton             M7  | S2  |     Sg      | O            | (NP (NP (DT the) (NN Anishinaabe)) (, ,) (NP (DT the) (NNP Dakota)) (, ,) (CC and) (NP (JJ other) (JJ Native) (JJ American) (NNS inhabitants)))
+	singleton             M8  | S2  |     Sg      | O            | (NP (DT the) (NNP Dakota))
+	singleton             M9  | S2  |     Pl  Per | O            | (NP (JJ other) (JJ Native) (JJ American) (NNS inhabitants))
+
+***  Input data/pathLengthTest.ner  ***
+*** Entity Report ***
+
+S1   John knew that Bob was weird , but he still invited him to the party .
+	entity_1_3_4          M1  | S1  | Mal Sg  Per | PERSON       | (NP (NNP John))
+	singleton             M2  | S1  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
+	entity_1_3_4          M3  | S1  | Mal Sg  Per | O            | (NP (PRP he))
+	entity_1_3_4          M4  | S1  | Mal Sg  Per | O            | (NP (PRP him))
+	singleton             M5  | S1  |             | O            | (NP (DT the) (NN party))
+
+***  Input data/pathLengthTest2.ner  ***
+*** Entity Report ***
+
+S1   Nintendo of America announced its new console .
+	entity_1_4            M1  | S1  |        NPer | ORGANIZATION | (NP (NP (NNP Nintendo)) (PP (IN of) (NP (NNP America))))
+	singleton             M2  | S1  |     Sg NPer | LOCATION     | (NP (NNP America))
+	singleton             M3  | S1  |     Sg      | O            | (NP (NP (PRP$ its)) (JJ new) (NN console))
+	entity_1_4            M4  | S1  |     Sg NPer | O            | (NP (PRP$ its))
+
+***  Input data/personNounTest.ner  ***
+*** Entity Report ***
+
+S1   The astronaut went to the space with Howard .
+	entity_1_5            M1  | S1  |     Sg  Per | O            | (NP (DT The) (NN astronaut))
+	singleton             M2  | S1  |     Sg      | O            | (NP (DT the) (NN space))
+	singleton             M3  | S1  | Mal Sg  Per | PERSON       | (NP (NNP Howard))
+S2   The robot did , too .
+	singleton             M4  | S2  |     Sg      | O            | (NP (DT The) (NN robot))
+S3   He had fun .
+	entity_1_5            M5  | S3  | Mal Sg  Per | O            | (NP (PRP He))
+	singleton             M6  | S3  |     Sg      | O            | (NP (NN fun))
+
+***  Input data/predNomTest.ner  ***
+*** Entity Report ***
+
+S1   Lincoln was president .
+	entity_1_2_3_4_5_6_7_8  M1  | S1  |     Sg      | O            | (NP (NNP Lincoln))
+	entity_1_2_3_4_5_6_7_8  M2  | S1  |     Sg  Per | O            | (NP (NN president))
+S2   Lincoln had been president .
+	entity_1_2_3_4_5_6_7_8  M3  | S2  |     Sg      | O            | (NP (NNP Lincoln))
+	entity_1_2_3_4_5_6_7_8  M4  | S2  |     Sg  Per | O            | (NP (NN president))
+S3   Lincoln was being president .
+	entity_1_2_3_4_5_6_7_8  M5  | S3  |     Sg      | O            | (NP (NNP Lincoln))
+	entity_1_2_3_4_5_6_7_8  M6  | S3  |     Sg  Per | O            | (NP (NN president))
+S4   Lincoln will be president .
+	entity_1_2_3_4_5_6_7_8  M7  | S4  |     Sg      | O            | (NP (NNP Lincoln))
+	entity_1_2_3_4_5_6_7_8  M8  | S4  |     Sg  Per | O            | (NP (NN president))
+
+***  Input data/propagate_types.ner  ***
+*** Entity Report ***
+
+S1   Bob went to the store , and it sucked .
+	entity_1_5            M1  | S1  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
+	entity_2_3_4_6        M2  | S1  |     Sg      | O            | (NP (DT the) (NN store))
+	entity_2_3_4_6        M3  | S1  |     Sg NPer | O            | (NP (PRP it))
+S2   It was closed .
+	entity_2_3_4_6        M4  | S2  |     Sg NPer | O            | (NP (PRP It))
+S3   He looked around it too .
+	entity_1_5            M5  | S3  | Mal Sg  Per | O            | (NP (PRP He))
+	entity_2_3_4_6        M6  | S3  |     Sg NPer | O            | (NP (PRP it))
+
+***  Input data/roleAppositivesTest.ner  ***
+*** Entity Report ***
+
+S1   The author John Smith wrote the book .
+	entity_1_2_5_6_7      M1  | S1  | Mal Sg  Per | PERSON       | (NP (NP (DT The) (NN author)) (NNP John) (NNP Smith))
+	entity_1_2_5_6_7      M2  | S1  |     Sg  Per | O            | (NP (DT The) (NN author))
+	singleton             M3  | S1  |     Sg      | O            | (NP (DT the) (NN book))
+S2   I learned about the famous painter John Smith , the subject of the exposition .
+	singleton             M4  | S2  |     Sg  Per | O            | (NP (PRP I))
+	entity_1_2_5_6_7      M5  | S2  | Mal Sg  Per | PERSON       | (NP (NP (NP (DT the) (JJ famous) (NN painter)) (NNP John) (NNP Smith)) (, ,) (NP (NP (DT the) (NN subject)) (PP (IN of) (NP (DT the) (NN exposition)))))
+	entity_1_2_5_6_7      M6  | S2  |     Sg  Per | O            | (NP (DT the) (JJ famous) (NN painter))
+	entity_1_2_5_6_7      M7  | S2  |     Sg      | O            | (NP (NP (DT the) (NN subject)) (PP (IN of) (NP (DT the) (NN exposition))))
+	singleton             M8  | S2  |     Sg      | O            | (NP (DT the) (NN exposition))
+S3   The shared Lunar Precursor Robotic Program was new .
+	singleton             M9  | S3  |     Sg      | O            | (NP (DT The) (JJ shared) (NNP Lunar) (NNP Precursor) (NNP Robotic) (NN Program))
+
+***  Input data/sameHeadWordTest.ner  ***
+*** Entity Report ***
+
+S1   The nice , smart boy liked to play in the park .
+	entity_1_3            M1  | S1  |     Sg  Per | O            | (NP (DT The) (ADJP (JJ nice) (, ,) (JJ smart)) (NN boy))
+	singleton             M2  | S1  |     Sg      | O            | (NP (DT the) (NN park))
+S2   This boy also liked to play soccer .
+	entity_1_3            M3  | S2  |     Sg  Per | O            | (NP (DT This) (NN boy))
+	singleton             M4  | S2  |     Sg      | O            | (NP (NN soccer))
+
+***  Input data/test1.ner  ***
+*** Entity Report ***
+
+S1   John went to the store .
+	singleton             M1  | S1  | Mal Sg  Per | PERSON       | (NP (NNP John))
+	entity_2_4_5_6        M2  | S1  |     Sg NPer | ORG_DESC     | (NP (DT the) (NN store))
+S2   Bob also went to the store .
+	entity_3_7            M3  | S2  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
+	entity_2_4_5_6        M4  | S2  |     Sg NPer | ORG_DESC     | (NP (DT the) (NN store))
+S3   It was a grocery store .
+	entity_2_4_5_6        M5  | S3  |     Sg NPer | O            | (NP (PRP It))
+	entity_2_4_5_6        M6  | S3  |     Sg NPer | ORG_DESC     | (NP (DT a) (NN grocery) (NN store))
+S4   He bought an item .
+	entity_3_7            M7  | S4  | Mal Sg  Per | O            | (NP (PRP He))
+	singleton             M8  | S4  |     Sg      | O            | (NP (DT an) (NN item))
+
+***  Input data/they1.ner  ***
+*** Entity Report ***
+
+S1   The earliest known settlers followed herds of large game to the region during the last glacial period .
+	entity_1_6            M1  | S1  |     Pl  Per | O            | (NP (DT The) (JJS earliest) (JJ known) (NNS settlers))
+	singleton             M2  | S1  |             | O            | (NP (NP (NNS herds)) (PP (IN of) (NP (JJ large) (NN game))))
+	singleton             M3  | S1  |     Sg      | O            | (NP (JJ large) (NN game))
+	singleton             M4  | S1  |     Sg      | O            | (NP (DT the) (NN region))
+	singleton             M5  | S1  |     Sg      | O            | (NP (DT the) (JJ last) (JJ glacial) (NN period))
+S2   They preceded the Anishinaabe , the Dakota , and other Native American inhabitants .
+	entity_1_6            M6  | S2  |     Pl MaybePer | O            | (NP (PRP They))
+	singleton             M7  | S2  |     Sg      | O            | (NP (NP (DT the) (NN Anishinaabe)) (, ,) (NP (DT the) (NNP Dakota)) (, ,) (CC and) (NP (JJ other) (JJ Native) (JJ American) (NNS inhabitants)))
+	singleton             M8  | S2  |     Sg      | O            | (NP (DT the) (NNP Dakota))
+	singleton             M9  | S2  |     Pl  Per | O            | (NP (JJ other) (JJ Native) (JJ American) (NNS inhabitants))
+
+***  Input data/they2.ner  ***
+*** Entity Report ***
+
+S1   The team practied very hard , and later on they won the game .
+	entity_1_2            M1  | S1  |             | O            | (NP (DT The) (NN team))
+	entity_1_2            M2  | S1  |     Pl MaybePer | O            | (NP (PRP they))
+	singleton             M3  | S1  |     Sg      | O            | (NP (DT the) (NN game))
+S2   The herd of animals grazed on the land , and then they moved on .
+	entity_4_7            M4  | S2  |             | O            | (NP (NP (DT The) (NN herd)) (PP (IN of) (NP (NNS animals))))
+	singleton             M5  | S2  |     Pl      | O            | (NP (NNS animals))
+	singleton             M6  | S2  |     Sg      | O            | (NP (DT the) (NN land))
+	entity_4_7            M7  | S2  |     Pl MaybePer | O            | (NP (PRP they))

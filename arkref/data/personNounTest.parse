@@ -1,0 +1,3 @@
+PARSE	-95.51036071777344	(ROOT (S (NP (DT The) (NN astronaut)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN space))) (PP (IN with) (NP (NNP Howard)))) (. .)))
+PARSE	-55.78525924682617	(ROOT (S (NP (DT The) (NN robot)) (VP (VBD did) (, ,) (ADVP (RB too))) (. .)))
+PARSE	-39.69464874267578	(ROOT (S (NP (PRP He)) (VP (VBD had) (NP (NN fun))) (. .)))

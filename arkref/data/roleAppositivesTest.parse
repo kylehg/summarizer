@@ -1,0 +1,3 @@
+PARSE	-93.28138732910156	(ROOT (S (NP (DT The) (NN author) (NNP John) (NNP Smith)) (VP (VBD wrote) (NP (DT the) (NN book))) (. .)))
+PARSE	-165.61993408203125	(ROOT (S (NP (PRP I)) (VP (VBD learned) (PP (IN about) (NP (NP (DT the) (JJ famous) (NN painter) (NNP John) (NNP Smith)) (, ,) (NP (NP (DT the) (NN subject)) (PP (IN of) (NP (DT the) (NN exposition))))))) (. .)))
+PARSE	-143.2998046875	(ROOT (S (NP (DT The) (ADJP (VBN shared)) (NNP Lunar) (NNP Precursor) (NNP Robotic) (NNP Program)) (VP (VBD was) (ADJP (JJ new))) (. .)))

@@ -1,0 +1,2 @@
+PARSE	-73.10531616210938	(ROOT (S (NP (PRP He) (CC and) (NNP Fred)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN store)))) (. .)))
+PARSE	-58.75383758544922	(ROOT (S (NP (PRP They)) (ADVP (RB also)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN library)))) (. .)))

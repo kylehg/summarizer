@@ -1,0 +1,2 @@
+PARSE	-71.54743957519531	(ROOT (S (NP (PRP I)) (VP (VBP am) (NP (NP (DT the) (NN prince)) (PP (IN of) (NP (NNS thieves))))) (. .)))
+PARSE	-103.07965087890625	(ROOT (S (NP (PRP I)) (VP (VP (VBP have) (NP (PRP$ my) (NN cake))) (CC and) (VP (VBP am) (VP (VBG eating) (NP (PRP it)) (ADVP (RB too))))) (. .)))

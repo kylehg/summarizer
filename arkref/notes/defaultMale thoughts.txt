@@ -1,0 +1,19 @@
+Sally went to the banker.
+He gave her money.
+
+Bob went to the banker.
+He wanted to do a transaction.
+
+The banker met Bob.
+He was having a busy day.
+
+--
+
+Sally went to the banker.
+He wanted...
+
+Bob went to the banker.
+He wanted...
+
+The banker met Bob.
+He wanted...

@@ -1,0 +1,170 @@
+--- summary.r53	2009-10-28 16:45:54.000000000 -0400
++++ summary.r56	2009-10-29 18:50:19.000000000 -0400
+@@ -32,20 +32,43 @@
+ 
+ ***  Input data/IWithinI.ner  ***
+ *** Entity Report ***
+ 
+ S1   Walmart says Gitano , its top-selling brand , is underselling .
+ 	entity_1_4            M1  | S1  |     Sg      | O            | (NP (NNP Walmart))
+ 	entity_2_3            M2  | S1  |     Sg      | O            | (NP (NP (NNP Gitano)) (, ,) (NP (NP (PRP$ its)) (JJ top-selling) (NN brand)) (, ,))
+ 	entity_2_3            M3  | S1  |     Sg      | O            | (NP (NP (PRP$ its)) (JJ top-selling) (NN brand))
+ 	entity_1_4            M4  | S1  |     Sg NPer | O            | (NP (PRP$ its))
+ 
++***  Input data/adjunctPhrases.ner  ***
++*** Entity Report ***
++
++S1   The students were tired of working .
++	entity_1_3_4_7        M1  | S1  |     Pl  Per | O            | (NP (DT The) (NNS students))
++S2   To meet their friends , they went to the bar .
++	singleton             M2  | S2  |     Pl  Per | O            | (NP (NP (PRP$ their)) (NNS friends))
++	entity_1_3_4_7        M3  | S2  |     Pl MaybePer | O            | (NP (PRP$ their))
++	entity_1_3_4_7        M4  | S2  |     Pl MaybePer | O            | (NP (PRP they))
++	singleton             M5  | S2  |     Sg      | O            | (NP (DT the) (NN bar))
++S3   To meet new people , they talked to them .
++	entity_6_8            M6  | S3  |             | O            | (NP (JJ new) (NNS people))
++	entity_1_3_4_7        M7  | S3  |     Pl MaybePer | O            | (NP (PRP they))
++	entity_6_8            M8  | S3  |     Pl MaybePer | O            | (NP (PRP them))
++S4   Since Bill wanted to talk to John , he picked up the phone .
++	entity_9_11           M9  | S4  | Mal Sg  Per | PERSON       | (NP (NNP Bill))
++	singleton             M10 | S4  | Mal Sg  Per | PERSON       | (NP (NNP John))
++	entity_9_11           M11 | S4  | Mal Sg  Per | O            | (NP (PRP he))
++	singleton             M12 | S4  |     Sg      | O            | (NP (DT the) (NN phone))
++S5   To Susan , she seemed nice .
++	singleton             M13 | S5  | Fem Sg  Per | PERSON       | (NP (NNP Susan))
++	singleton             M14 | S5  | Fem Sg  Per | O            | (NP (PRP she))
++
+ ***  Input data/article.ner  ***
+ *** Entity Report ***
+ 
+ S1   The plan , for the 25 top earners at seven companies that received exceptional help , will on average cut total compensation this year by about 50 percent . The companies are Citigroup , Bank of America , American International Group , General Motors , Chrysler and the financing arms of the two automakers .
+ 	entity_1_30_35        M1  | S1  |     Sg      | O            | (NP (NP (DT The) (NN plan)) (, ,) (PP (IN for) (NP (NP (DT the) (CD 25) (JJ top) (NNS earners)) (PP (IN at) (NP (NP (CD seven) (NNS companies)) (SBAR (WHNP (WDT that)) (S (VP (VBD received) (NP (JJ exceptional) (NN help))))))))) (, ,))
+ 	singleton             M2  | S1  |     Pl  Per | O            | (NP (NP (DT the) (CD 25) (JJ top) (NNS earners)) (PP (IN at) (NP (NP (CD seven) (NNS companies)) (SBAR (WHNP (WDT that)) (S (VP (VBD received) (NP (JJ exceptional) (NN help))))))))
+ 	entity_3_9_10_26_33   M3  | S1  |             | O            | (NP (NP (CD seven) (NNS companies)) (SBAR (WHNP (WDT that)) (S (VP (VBD received) (NP (JJ exceptional) (NN help))))))
+ 	singleton             M4  | S1  |     Sg      | O            | (NP (JJ exceptional) (NN help))
+ 	singleton             M5  | S1  |     Sg      | O            | (NP (NN average))
+ 	entity_6_31           M6  | S1  |     Sg      | O            | (NP (NP (NP (JJ total) (NN compensation)) (NP (DT this) (NN year)) (PP (IN by) (NP (QP (RB about) (CD 50)) (NN percent))) (. .)) (SBAR (S (NP (DT The) (NNS companies)) (VP (VBP are) (NP (NP (NNP Citigroup)) (, ,) (NP (NP (NNP Bank)) (PP (IN of) (NP (NNP America)))) (, ,) (NP (NNP American) (NNP International) (NNP Group)) (, ,) (NP (NNP General) (NNPS Motors)) (, ,) (NP (NNP Chrysler)) (CC and) (NP (NP (DT the) (VBG financing) (NNS arms)) (PP (IN of) (NP (DT the) (CD two) (NNS automakers)))))))))
+@@ -83,61 +106,61 @@
+ 	singleton             M36 | S4  |             | O            | (NP (JJ multimillion-dollar) (NN pay) (NNS packages))
+ 
+ ***  Input data/calverts.ner  ***
+ *** Entity Report ***
+ 
+ S1   While establishing a refuge for Catholics , who faced increasing persecution in Anglican England , the Calverts were also interested in creating profitable estates .
+ 	singleton             M1  | S1  |     Sg      | O            | (NP (NP (DT a) (NN refuge)) (PP (IN for) (NP (NP (NNPS Catholics)) (, ,) (SBAR (WHNP (WP who)) (S (VP (VBD faced) (NP (NP (VBG increasing) (NN persecution)) (PP (IN in) (NP (NNP Anglican) (NNP England))))))))))
+ 	singleton             M2  | S1  |     Pl      | O            | (NP (NP (NNPS Catholics)) (, ,) (SBAR (WHNP (WP who)) (S (VP (VBD faced) (NP (NP (VBG increasing) (NN persecution)) (PP (IN in) (NP (NNP Anglican) (NNP England))))))))
+ 	singleton             M3  | S1  |     Sg      | O            | (NP (NP (VBG increasing) (NN persecution)) (PP (IN in) (NP (NNP Anglican) (NNP England))))
+ 	singleton             M4  | S1  |     Sg NPer | LOCATION     | (NP (NNP Anglican) (NNP England))
+-	singleton             M5  | S1  |     Pl      | O            | (NP (DT the) (NNPS Calverts))
++	entity_5_10           M5  | S1  |     Pl      | O            | (NP (DT the) (NNPS Calverts))
+ 	entity_6_18_33        M6  | S1  |     Pl      | O            | (NP (JJ profitable) (NNS estates))
+ S2   To this end , and to avoid trouble with the British government , they also encouraged Protestant immigration .
+ 	singleton             M7  | S2  |     Sg      | O            | (NP (DT this) (NN end))
+ 	singleton             M8  | S2  |     Sg      | O            | (NP (NP (VB avoid) (NN trouble)) (PP (IN with) (NP (DT the) (JJ British) (NN government))))
+-	entity_9_10           M9  | S2  |             | O            | (NP (DT the) (JJ British) (NN government))
+-	entity_9_10           M10 | S2  |     Pl MaybePer | O            | (NP (PRP they))
++	singleton             M9  | S2  |             | O            | (NP (DT the) (JJ British) (NN government))
++	entity_5_10           M10 | S2  |     Pl MaybePer | O            | (NP (PRP they))
+ 	singleton             M11 | S2  |     Sg      | O            | (NP (JJ Protestant) (NN immigration))
+ S3   Maryland €™s royal charter had a mixture of feudal and modern elements .
+ 	singleton             M12 | S3  |     Sg      | O            | (NP (NNP Maryland) (NN €™s) (NN royal) (NN charter))
+ 	singleton             M13 | S3  |     Sg      | O            | (NP (NP (DT a) (NN mixture)) (PP (IN of) (NP (JJ feudal) (CC and) (JJ modern) (NNS elements))))
+ 	singleton             M14 | S3  |     Pl      | O            | (NP (JJ feudal) (CC and) (JJ modern) (NNS elements))
+ S4   On the one hand the Calvert family had the power to create manorial estates .
+ 	singleton             M15 | S4  |     Sg      | O            | (NP (DT the) (CD one) (NN hand))
+-	singleton             M16 | S4  |             | O            | (NP (DT the) (NNP Calvert) (NN family))
++	entity_16_20_25_29_30_38  M16 | S4  |             | O            | (NP (DT the) (NNP Calvert) (NN family))
+ 	singleton             M17 | S4  |     Sg      | O            | (NP (DT the) (NN power) (S (VP (TO to) (VP (VB create) (NP (JJ manorial) (NNS estates))))))
+ 	entity_6_18_33        M18 | S4  |     Pl      | O            | (NP (JJ manorial) (NNS estates))
+ S5   On the other , they could only make laws with the consent of freemen -LRB- property holders -RRB- .
+-	entity_19_20_25_29_30_38  M19 | S5  |             | O            | (NP (DT the) (JJ other))
+-	entity_19_20_25_29_30_38  M20 | S5  |     Pl MaybePer | O            | (NP (PRP they))
++	singleton             M19 | S5  |             | O            | (NP (DT the) (JJ other))
++	entity_16_20_25_29_30_38  M20 | S5  |     Pl MaybePer | O            | (NP (PRP they))
+ 	singleton             M21 | S5  |             | O            | (NP (NNS laws))
+ 	singleton             M22 | S5  |     Sg      | O            | (NP (NP (DT the) (NN consent)) (PP (IN of) (NP (NP (NN freemen)) (PRN (-LRB- -LRB-) (NP (NN property) (NNS holders)) (-RRB- -RRB-)))))
+ 	singleton             M23 | S5  |     Sg      | O            | (NP (NP (NN freemen)) (PRN (-LRB- -LRB-) (NP (NN property) (NNS holders)) (-RRB- -RRB-)))
+ 	singleton             M24 | S5  |     Pl      | O            | (NP (NN property) (NNS holders))
+ S6   They found that in order to attract settlers €” and make a profit from their holdings €” they had to offer people farms , not just tenancy on manorial estates .
+-	entity_19_20_25_29_30_38  M25 | S6  |     Pl MaybePer | O            | (NP (PRP They))
++	entity_16_20_25_29_30_38  M25 | S6  |     Pl MaybePer | O            | (NP (PRP They))
+ 	entity_26_28          M26 | S6  |     Sg      | O            | (NP (JJ settlers) (NN €”))
+ 	singleton             M27 | S6  |     Sg      | O            | (NP (DT a) (NN profit))
+ 	entity_26_28          M28 | S6  |     Sg      | O            | (NP (NP (PRP$ their)) (NNS holdings) (NN €”))
+-	entity_19_20_25_29_30_38  M29 | S6  |     Pl MaybePer | O            | (NP (PRP$ their))
+-	entity_19_20_25_29_30_38  M30 | S6  |     Pl MaybePer | O            | (NP (PRP they))
++	entity_16_20_25_29_30_38  M29 | S6  |     Pl MaybePer | O            | (NP (PRP$ their))
++	entity_16_20_25_29_30_38  M30 | S6  |     Pl MaybePer | O            | (NP (PRP they))
+ 	entity_31_35          M31 | S6  |     Pl      | O            | (NP (NP (NNS people) (NNS farms)) (, ,) (RB not) (RB just) (NP (NP (NN tenancy)) (PP (IN on) (NP (JJ manorial) (NNS estates)))))
+ 	singleton             M32 | S6  |     Sg      | O            | (NP (NP (NN tenancy)) (PP (IN on) (NP (JJ manorial) (NNS estates))))
+ 	entity_6_18_33        M33 | S6  |     Pl      | O            | (NP (JJ manorial) (NNS estates))
+ S7   The number of independent farms grew in consequence .
+ 	singleton             M34 | S7  |     Sg      | O            | (NP (NP (DT The) (NN number)) (PP (IN of) (NP (JJ independent) (NNS farms))))
+ 	entity_31_35          M35 | S7  |     Pl      | O            | (NP (JJ independent) (NNS farms))
+ 	singleton             M36 | S7  |     Sg      | O            | (NP (NN consequence))
+ S8   Their owners demanded a voice in the affairs of the colony .
+ 	singleton             M37 | S8  |     Pl  Per | O            | (NP (NP (PRP$ Their)) (NNS owners))
+-	entity_19_20_25_29_30_38  M38 | S8  |     Pl MaybePer | O            | (NP (PRP$ Their))
++	entity_16_20_25_29_30_38  M38 | S8  |     Pl MaybePer | O            | (NP (PRP$ Their))
+ 	singleton             M39 | S8  |     Sg      | O            | (NP (DT a) (NN voice))
+ 	singleton             M40 | S8  |     Pl      | O            | (NP (NP (DT the) (NNS affairs)) (PP (IN of) (NP (DT the) (NN colony))))
+ 	singleton             M41 | S8  |             | O            | (NP (DT the) (NN colony))
+ S9   Maryland €™s first legislature met in 1635 .
+ 	singleton             M42 | S9  |             | O            | (NP (NNP Maryland) (NNP €™s) (JJ first) (NN legislature))
+ 	singleton             M43 | S9  |             | O            | (NP (CD 1635))
+ 
+ ***  Input data/conjunctionsTest.ner  ***
+ *** Entity Report ***
+ 
+@@ -299,20 +322,51 @@
+ S1   Bob went to the store , and it sucked .
+ 	entity_1_5            M1  | S1  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
+ 	entity_2_3_4_6        M2  | S1  |     Sg      | O            | (NP (DT the) (NN store))
+ 	entity_2_3_4_6        M3  | S1  |     Sg NPer | O            | (NP (PRP it))
+ S2   It was closed .
+ 	entity_2_3_4_6        M4  | S2  |     Sg NPer | O            | (NP (PRP It))
+ S3   He looked around it too .
+ 	entity_1_5            M5  | S3  | Mal Sg  Per | O            | (NP (PRP He))
+ 	entity_2_3_4_6        M6  | S3  |     Sg NPer | O            | (NP (PRP it))
+ 
++***  Input data/reflexives.ner  ***
++*** Entity Report ***
++
++S1   John bought himself a book .
++	entity_1_2_5_6_8_10   M1  | S1  | Mal Sg  Per | PERSON       | (NP (NNP John))
++	entity_1_2_5_6_8_10   M2  | S1  | Mal Sg  Per | O            | (NP (PRP himself))
++	entity_3_7_11         M3  | S1  |     Sg      | O            | (NP (DT a) (NN book))
++S2   Bob knew that John bought himself a book .
++	entity_4_9            M4  | S2  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
++	entity_1_2_5_6_8_10   M5  | S2  | Mal Sg  Per | PERSON       | (NP (NNP John))
++	entity_1_2_5_6_8_10   M6  | S2  | Mal Sg  Per | O            | (NP (PRP himself))
++	entity_3_7_11         M7  | S2  |     Sg      | O            | (NP (DT a) (NN book))
++S3   John knew that Bob bought him a book .
++	entity_1_2_5_6_8_10   M8  | S3  | Mal Sg  Per | PERSON       | (NP (NNP John))
++	entity_4_9            M9  | S3  | Mal Sg  Per | PERSON       | (NP (NNP Bob))
++	entity_1_2_5_6_8_10   M10 | S3  | Mal Sg  Per | O            | (NP (PRP him))
++	entity_3_7_11         M11 | S3  |     Sg      | O            | (NP (DT a) (NN book))
++S4   The company ruined itself .
++	entity_12_13          M12 | S4  |             | O            | (NP (DT The) (NN company))
++	entity_12_13          M13 | S4  |     Sg NPer | O            | (NP (PRP itself))
++S5   The corporation ruined its chances .
++	entity_14_16_18       M14 | S5  |             | O            | (NP (DT The) (NN corporation))
++	singleton             M15 | S5  |     Pl      | O            | (NP (NP (PRP$ its)) (NNS chances))
++	entity_14_16_18       M16 | S5  |     Sg NPer | O            | (NP (PRP$ its))
++S6   The bank ruined it .
++	singleton             M17 | S6  |     Sg      | O            | (NP (DT The) (NN bank))
++	entity_14_16_18       M18 | S6  |     Sg NPer | O            | (NP (PRP it))
++S7   James believed that he could win .
++	entity_19_20          M19 | S7  | Mal Sg  Per | PERSON       | (NP (NNP James))
++	entity_19_20          M20 | S7  | Mal Sg  Per | O            | (NP (PRP he))
++
+ ***  Input data/roleAppositivesTest.ner  ***
+ *** Entity Report ***
+ 
+ S1   The author John Smith wrote the book .
+ 	entity_1_2_5_6_7      M1  | S1  | Mal Sg  Per | PERSON       | (NP (NP (DT The) (NN author)) (NNP John) (NNP Smith))
+ 	entity_1_2_5_6_7      M2  | S1  |     Sg  Per | O            | (NP (DT The) (NN author))
+ 	singleton             M3  | S1  |     Sg      | O            | (NP (DT the) (NN book))
+ S2   I learned about the famous painter John Smith , the subject of the exposition .
+ 	singleton             M4  | S2  |     Sg  Per | O            | (NP (PRP I))
+ 	entity_1_2_5_6_7      M5  | S2  | Mal Sg  Per | PERSON       | (NP (NP (NP (DT the) (JJ famous) (NN painter)) (NNP John) (NNP Smith)) (, ,) (NP (NP (DT the) (NN subject)) (PP (IN of) (NP (DT the) (NN exposition)))))

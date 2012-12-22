@@ -1,0 +1,94 @@
+Date: Wed, 13 Jan 2010 16:38:01 -0500
+From: "Brendan O'Connor" <brenocon@cmu.edu>
+To: Michael Heilman <mheilman@cs.cmu.edu>
+
+SNIP SNIP
+
+
+>> r1289
+>> src/arkref/analysis/Resolve.java
+>> skip it
+>>
+>
+> I'm guessing 1289 was to move stdout stuff to stderr.
+
+
+something like that; skipped
+
+>> r1291 - disable organization types
+>>
+>> src/arkref/analysis/Types.java
+>>
+>>
+> I disabled the extra type-check code having to with organizations because I
+> felt it was an extra bit of complexity that probably wasn't helping us any.
+>  If I remember correctly, I ran a quick eval run and it boosted the eval
+> numbers a hair.  I made this change to the arkref SVN repo also (or maybe
+> you did, because the code is disabled in the current repo).
+
+
+oh, you *did* do this change in the svn repo.  i didn't check both.  now i
+see.
+
+This causes the following unit test to fail.  i'm disabling it.
+
+ // Disable the organization type check -- gives only slim gains on ACE eval
+// and potentially complicates other analysis.
+ // Causes data/they2  unit test to fail: TestArkref.testThey()
+
+....
+
+//The team practiced very hard, and later on they won the game.
+ //The herd of animals grazed on the land, and then they moved on.
+ d = Document.loadFiles("data/they2");
+ _SimplePipeline.go(d);
+System.out.println("!!!!   Disabled data/they2 test, fails since we disabled
+the org check in Types.number()  !!!!");
+ // assertLink(d,1,2);
+// assertLink(d,4,7);
+// assertNoLink(d,2,4);
+
+
+
+
+>> r1292 - looks like upgrades to noun type recognition - title recognition
+>> looks good to take
+>>
+>> src/arkref/analysis/NounTypes.java
+>> src/arkref/analysis/Types.java
+>>
+>>
+> The word matching was being a bit too liberal.
+
+
+>> r1293 - looks like more upgrades to noun type recognition (titles)
+>> src/arkref/analysis/Types.java
+>>
+>> I added some code for obvious gender and person indicators (Mr., Mrs.,
+> etc.)
+
+
+
+> r1297 - removes fig.basic
+>>
+>
+as discussed elsewhere, this is now kept
+
+
+>  r1301 - subtle change to parse error recognition
+>
+> On wikipedia articles (e.g., noisy data), the system was crashing at some
+> point due to sentences from the text that consisted of only "."  Before, I
+> had used "." to check whether parsing had worked.  So, when real input with
+> "." came in, chaos ensued (e.g., mis-alignments between parses and entity
+> strings).
+
+
+oops, i think i misread this commit -- it actually didn't touch any arkref/
+code.  arkref now uses a different method of detecting parse errors -- the
+java interface to the parser now wraps up the result into a little data
+structure, AnalysisUtilities.ParseResult, that includes a boolean whether
+the parse succeeded; and the textual protocol includes this information as
+well.  This data structure is made to disappear during integration time when
+creating the Document with all its Sentences; then, each Sentence object has
+a boolean, hasParse with this information.

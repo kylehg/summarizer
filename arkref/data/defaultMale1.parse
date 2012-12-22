@@ -1,0 +1,2 @@
+PARSE	-62.223472595214844	(ROOT (S (NP (NNP Sally)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN banker)))) (. .)))
+PARSE	-45.840965270996094	(ROOT (S (NP (PRP He)) (VP (VBD gave) (NP (PRP$ her) (NN money))) (. .)))

@@ -1,0 +1,61 @@
+documents with sentence breaking disagreements
+who's better?
+
+Analysis for r81
+
+us
+19 ace_rothdev/APW20001130_2108_0849.ssent
+18 ace_rothdev/APW20001130_2108_0849.l3sent
+
+us
+37 ace_rothdev/APW20001225_2035_0477.ssent
+36 ace_rothdev/APW20001225_2035_0477.l3sent
+
+stanford
+error: [etc. Accordding]  should break
+22 ace_rothdev/CHTB_267_ENG.ssent
+21 ace_rothdev/CHTB_267_ENG.l3sent
+
+us
+but i don't understand why; possibly for a bad reason
+28 ace_rothdev/NYT20001106_1705_0187.ssent
+27 ace_rothdev/NYT20001106_1705_0187.l3sent
+
+stanford but both bad
+error: confusing junk separators
+28 ace_rothdev/NYT20001123_1511_0062.ssent
+11 ace_rothdev/NYT20001123_1511_0062.l3sent
+
+toss-up
+60 ace_rothdev/NYT20001217_2241_0165.ssent
+59 ace_rothdev/NYT20001217_2241_0165.l3sent
+
+
+========== fixed =========
+
+
+-- too-aggressive breaking on double quotes for lowercase mode
+-- should require punctuation too to increase accuracy
+
+stanford
+error: double quote stop
+15 ace_rothdev/APW20001002_0615_0146.ssent
+16 ace_rothdev/APW20001002_0615_0146.l3sent
+
+stanford
+error: [" bla] should not break without punctuation with doublequote
+16 ace_rothdev/CNN20001217_1400_0883.ssent
+18 ace_rothdev/CNN20001217_1400_0883.l3sent
+
+stanford
+error: ["] again
+18 ace_rothdev/CNN20001219_1400_1513.ssent
+19 ace_rothdev/CNN20001219_1400_1513.l3sent
+
+stanford
+error: "mass" lowercase triggering IMPOSSIBLE_PENULTIMATES "Mass"
+solution: make the check's case sensitivity conditional on document's orthographic conventions
+27 ace_rothdev/NYT20001129_2040_0383.ssent
+26 ace_rothdev/NYT20001129_2040_0383.l3sent
+
+

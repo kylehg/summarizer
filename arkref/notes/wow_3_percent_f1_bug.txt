@@ -1,0 +1,22 @@
+Anecdote.
+Tricky tricky!  This never got checked in, thankfully.
+
+diff --git a/src/analysis/Types.java b/src/analysis/Types.java
+index 15d7eee..3ca381d 100644
+--- a/src/analysis/Types.java
++++ b/src/analysis/Types.java
+@@ -192,9 +192,11 @@ public class Types {
+ 			return personhood(p);
+ 		}
+ 		String t = m.neType();
+-		if (t.equals("PERSON") 
+-				|| NounTypes.getInstance().getType(m.getHeadWord()).equals("person")
+-				|| genderByFirstNames(m) != null)
++		if (t.equals("PERSON"))
++			return Personhood.Person;
++		if (m.node()!=null && (
++				NounTypes.getInstance().getType(m.getHeadWord()).equals("person")
++			 || genderByFirstNames(m) != null))
+ 			return Personhood.Person;
+ 		if (t.equals("O")) 
+ 			return null;

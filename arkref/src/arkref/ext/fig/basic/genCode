@@ -1,0 +1,18 @@
+#!/usr/bin/ruby
+
+def gen(srcFile, destFile, map)
+  puts "generate #{srcFile} -> #{destFile}"
+  out = open(destFile, "w")
+  IO.foreach(srcFile) { |line|
+    map.each_pair { |k,v|
+      line = line.gsub(/\w+\/\*#{k}\*\//, v)
+    }
+    out.puts line
+  }
+  out.close
+end
+
+gen("IntVec.java", "DoubleVec.java",
+  { "type" => "double", "Type" => "Double", "TypeVec" => "DoubleVec" })
+gen("IntVec.java", "FloatVec.java",
+  { "type" => "float", "Type" => "Float", "TypeVec" => "FloatVec" })

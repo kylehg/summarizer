@@ -1,0 +1,91 @@
+--- r91.log	2009-11-23 14:18:13.000000000 -0500
++++ r92_backquote_fix.log	2009-11-23 14:20:15.000000000 -0500
+@@ -36537,42 +36537,43 @@
+ TOKEN [``]  :   
+   Aligned to pos=53 : [``I don't ]
+ TOKEN [I]  :  
+   Aligned to pos=55 : [I don't th]
+ TOKEN [do]  :   
+   Aligned to pos=57 : [don't thin]
+ TOKEN [n't]  :  
+   Aligned to pos=59 : [n't think\n]
+ TOKEN [think]  :   
+   Aligned to pos=63 : [think\nthe ]
+ TOKEN [the]  :  \n
+   Aligned to pos=69 : [the Bronco]
+ TOKEN [Broncos]  :   
+   Aligned to pos=73 : [Broncos ow]
+ TOKEN [own]  :   
+   Aligned to pos=81 : [own the wo]
+ TOKEN [the]  :   
+   Aligned to pos=85 : [the word ']
+ TOKEN [word]  :   
+   Aligned to pos=89 : [word 'Bron]
+-TOKEN [`]  :   'Broncos.''' \n\nNFL lawyer David Proper has given Hanlon until Dec. 26 to remove the\nsign. \n  FAILED MATCH for token [`]
+-TOKEN [Broncos]  :   '
++TOKEN [`]  :   
++  Aligned to pos=94 : ['Broncos.']
++TOKEN [Broncos]  :  
+   Aligned to pos=95 : [Broncos.'']
+ TOKEN [.]  :  
+   Aligned to pos=102 : [.''' \n\nNFL]
+ TOKEN ['']  :  
+   Aligned to pos=103 : [''' \n\nNFL ]
+ TOKEN [']  :  
+   Aligned to pos=105 : [' \n\nNFL la]
+ TOKEN [NFL]  :   \n\n
+   Aligned to pos=109 : [NFL lawyer]
+ TOKEN [lawyer]  :   
+   Aligned to pos=113 : [lawyer Dav]
+ TOKEN [David]  :   
+   Aligned to pos=120 : [David Prop]
+ TOKEN [Proper]  :   
+   Aligned to pos=126 : [Proper has]
+ TOKEN [has]  :   
+   Aligned to pos=133 : [has given ]
+ TOKEN [given]  :   
+   Aligned to pos=137 : [given Hanl]
+ TOKEN [Hanlon]  :   
+@@ -37024,41 +37025,41 @@
+ Alignment!  Word:ACE  1060:1060  :   [his/O          ]  <->  [M2   | his | his                                            ]
+ Ace Mention to Align:  pos=1064  :  M45  | lawyer | his lawyer
+   no string match pos=1060  :  his/O
+ Alignment!  Word:ACE  1064:1064  :   [lawyer/O       ]  <->  [M45  | lawyer | his lawyer                                  ]
+ Ace Mention to Align:  pos=1086  :  M3   | I | I
+   no string match pos=1064  :  lawyer/O
+   no string match pos=1071  :  advises/O
+   no string match pos=1078  :  ,/O
+   no string match pos=1080  :  but/O
+   no string match pos=1084  :  ``/O
+ Alignment!  Word:ACE  1086:1086  :   [I/O            ]  <->  [M3   | I | I                                                ]
+ Ace Mention to Align:  pos=1104  :  M12  | Broncos | the Broncos
+   no string match pos=1086  :  I/O
+   no string match pos=1088  :  do/O
+   no string match pos=1090  :  n't/O
+   no string match pos=1094  :  think/O
+   no string match pos=1100  :  the/O
+ Alignment!  Word:ACE  1104:1104  :   [Broncos/O      ]  <->  [M12  | Broncos | the Broncos                                ]
+ Ace Mention to Align:  pos=1140  :  M46  | NFL | NFL
+   no string match pos=1120  :  word/O
+-  no string match pos=1124  :  `/O
++  no string match pos=1125  :  `/O
+   no string match pos=1126  :  Broncos/O
+   no string match pos=1133  :  ./O
+   no string match pos=1134  :  ''/O
+   no string match pos=1136  :  '/O
+ Alignment!  Word:ACE  1140:1140  :   [NFL/ORGANIZATION]  <->  [M46  | NFL | NFL                                            ]
+ Ace Mention to Align:  pos=1144  :  M48  | lawyer | NFL lawyer
+   no string match pos=1140  :  NFL/ORGANIZATION
+ Alignment!  Word:ACE  1144:1144  :   [lawyer/O       ]  <->  [M48  | lawyer | NFL lawyer                                  ]
+ Ace Mention to Align:  pos=1151  :  M47  | David Proper | NFL lawyer David Proper
+   no string match pos=1144  :  lawyer/O
+ Alignment!  Word:ACE  1151:1151  :   [David/PERSON   ]  <->  [M47  | David Proper | NFL lawyer David Proper               ]
+ Ace Mention to Align:  pos=1174  :  M4   | Hanlon | Hanlon
+   no string match pos=1151  :  David/PERSON
+   no string match pos=1157  :  Proper/O
+   no string match pos=1164  :  has/O
+   no string match pos=1168  :  given/O
+ Alignment!  Word:ACE  1174:1174  :   [Hanlon/O       ]  <->  [M4   | Hanlon | Hanlon                                      ]
+ Ace Mention to Align:  pos=1238  :  M49  | Proper | Proper
+   no string match pos=1217  :  In/O
+   no string match pos=1220  :  a/O

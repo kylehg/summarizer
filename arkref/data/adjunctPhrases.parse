@@ -1,0 +1,5 @@
+PARSE	-76.77406311035156	(ROOT (S (NP (DT The) (NNS students)) (VP (VBD were) (VP (VBN tired) (PP (IN of) (S (VP (VBG working)))))) (. .)))
+PARSE	-96.5121078491211	(ROOT (S (S (VP (TO To) (VP (VB meet) (NP (PRP$ their) (NNS friends))))) (, ,) (NP (PRP they)) (VP (VBD went) (PP (TO to) (NP (DT the) (NN bar)))) (. .)))
+PARSE	-88.22035217285156	(ROOT (S (S (VP (TO To) (VP (VB meet) (NP (JJ new) (NNS people))))) (, ,) (NP (PRP they)) (VP (VBD talked) (PP (TO to) (NP (PRP them)))) (. .)))
+PARSE	-129.16543579101562	(ROOT (S (SBAR (IN Since) (S (NP (NNP Bill)) (VP (VBD wanted) (S (VP (TO to) (VP (VB talk) (PP (TO to) (NP (NNP John))))))))) (, ,) (NP (PRP he)) (VP (VBD picked) (PRT (RP up)) (NP (DT the) (NN phone))) (. .)))
+PARSE	-82.73074340820312	(ROOT (S (PP (TO To) (NP (NNP Susan))) (, ,) (NP (PRP she)) (VP (VBD seemed) (ADJP (JJ nice))) (. .)))

@@ -21,7 +21,7 @@ MAX_SENT_LEN = 55
 
 # The maximum similarity between two sentences that one should be
 # considered a duplicate of the other.
-MAX_SIM_CUTOFF = 0.3
+MAX_SIM_CUTOFF = 0.4
 
 
 

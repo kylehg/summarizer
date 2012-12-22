@@ -66,8 +66,8 @@ def gen_lexrank_summary(orig_sents, max_words):
 ###############################################################################
 if __name__ == '__main__':
     # Gen summaries
-#    gen_summaries('lexrank', gen_lexrank_summary, 0, 10)
-    sums = [(i, models) for i, _, models, _ in get_collections(False)][:10]
+#    gen_summaries('lexrank', gen_lexrank_summary, 10)
+#    sums = [(i, models) for i, _, models, _ in get_collections(False)][10:]
     gen_config('lexrank', 'rouge/lexrank-config.xml',
-               'lexrank', sums)
+               'lexrank')#, sums)
 

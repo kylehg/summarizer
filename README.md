@@ -1,4 +1,6 @@
-# CIS-530 Final Project
+# UNMAINTAINED: CIS-530 Final Project
+
+**NOTE: This was a school project. It is very likely riddled with bugs, and is entirely unmaintained. It should not be considered for any real-world use and we are not accepting issues or PRs.**
 
 A multidocument summarizer. Final project for CIS-530.
 By Kyle Hardgrave and Amalia Hawkins ({kyleh,hawka}@seas.upenn.edu)
